@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+local-state*
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+*.pem
+*.key
+.aws/
+work/
+recordings/

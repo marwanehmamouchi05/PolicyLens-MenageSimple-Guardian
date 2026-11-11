@@ -1,0 +1,45 @@
+PLAN D’ENREGISTREMENT — TROIS MINUTES MAXIMUM
+
+Préparation hors vidéo
+- Arrêter les anciennes sessions ; lancer `python server.py --ephemeral`.
+- Ouvrir http://127.0.0.1:8879 dans une fenêtre de 1440 × 1000 environ.
+- Garder DEMO_FR.txt sur un autre écran et préparer les données ci-dessous.
+- Ne pas effacer les qualificatifs historiques. La lecture directe du 10 novembre donne 48 h ; la simulation concerne l’ancien extrait à 24 h.
+
+0:00–0:20 — Tableau de bord
+Afficher l’objectif et les quatre catégories. L’état vierge contient un écart actuel à examiner, deux points à clarifier, zéro résolution locale et un cas historique distinct. Les nombres sont calculés.
+
+0:20–0:50 — Annulation
+Sélectionner « Annulation : 24 ou 48 heures ? ». Pointer l’ancien extrait daté du 9 novembre et l’extrait actuel du 10 novembre. Énoncer la distinction historique. Le calculateur contient déjà : prix 43.90 CHF, durée 2 h, préavis 36 h, règle 48 h. Ne pas présenter CHF 79.02 comme une perte mesurée.
+
+0:50–1:15 — Employeur
+Sélectionner « Qui est réellement l’employeur ? ». Montrer les citations originales et la comparaison des quatre rôles : identité, administration, assurances / cotisations et responsabilités. La formulation anglaise actuelle porte sur la délégation ; elle ne désigne pas explicitement l’agence comme employeur légal. Montrer « À clarifier ».
+
+1:15–1:50 — Nouvelle analyse
+Navigation « Nouvelle analyse ». Saisir :
+Titre : Article fictif de démonstration
+Catégorie : Délai d’annulation sans frais
+Valeur : 12
+URL déclarée : https://example.org/article-fictif
+Extrait : Annulation gratuite jusqu’à 12 heures avant le ménage.
+Service : Ménage standard / régulier
+Cocher les conditions concordantes et laisser l’exemple fictif coché.
+Cliquer « Comparer aux règles enregistrées » : écart potentiel.
+Dans la même saisie, remplacer la valeur par 48 et l’extrait par :
+Annulation gratuite jusqu’à 48 heures avant le ménage.
+Cliquer « Mettre à jour et comparer » : aucun écart sur ce contrôle. Ne pas créer une deuxième saisie.
+
+1:50–2:20 — Correction locale
+Navigation « Corrections locales ». Cliquer « Utiliser la proposition », cocher l’hypothèse explicite, puis « Appliquer localement et revérifier ». Montrer 48 h / 48 h et « Résolu dans la simulation », ainsi que l’historique. Ne pas retaper toute la formulation.
+Option si le temps le permet, répétée avant la prise : changer 48 en 72, appliquer, puis revenir à 48 et appliquer. Les tests vérifient déjà cette réapparition ; la manipulation n’est pas obligatoire pendant la vidéo.
+
+2:20–2:45 — Revue humaine et rapport
+Retour au tableau de bord, sélectionner l’employeur.
+Note : Quel modèle s’applique au service réservé ?
+Cliquer « Demander une précision ». Le point reste « À clarifier ».
+Ouvrir le rapport français et montrer la synthèse, le constat employeur, ses limites et les prochaines actions. L’export JSON est disponible dans « Rapports et sources » ; il n’est pas nécessaire de le télécharger pendant la prise.
+
+2:45–3:00 — Conclusion
+Annoncer les résultats et limites, puis terminer avant trois minutes. Aucun écran de code ni architecture expérimentale nécessaire.
+
+Pour refaire une prise vierge : arrêter le serveur éphémère et le relancer. Recharger la page ne remet pas la session à zéro.

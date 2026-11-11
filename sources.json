@@ -1,0 +1,223 @@
+{
+  "audit_date": "2026-11-10",
+  "method": "Extraits sélectionnés manuellement, lecture HTTPS directe et vérification exacte du texte normalisé.",
+  "sources": [
+    {
+      "id": "pricing",
+      "title": "Article tarifaire",
+      "url": "https://menagesimple.com/prix-menage-domicile-suisse/",
+      "final_url": "https://menagesimple.com/prix-menage-domicile-suisse/",
+      "http_status": 200,
+      "checked_at": "2026-11-10T09:00:47.733938+00:00",
+      "sha256": "9ed128ffd32aa8f934f53b08f159086d3a1997892e3f91672f40ebcaf42b6928",
+      "published_modified_metadata": [
+        "2026-04-13T22:00:00+00:00",
+        "2026-11-10T07:35:30+00:00",
+        "2026-04-13T22:00:00+00:00",
+        "2026-11-10T07:35:30+00:00"
+      ],
+      "displayed_version": "Date d’effet non confirmée.",
+      "excerpts": [
+        {
+          "id": "pricing-notice",
+          "quote": "sans frais si c’est fait 24h à l’avance.",
+          "observed": "2026-11-09",
+          "historical": true,
+          "verified_in_current_capture": false
+        },
+        {
+          "id": "pricing-current",
+          "quote": "sans frais si c’est fait 48h à l’avance.",
+          "observed": "2026-11-10",
+          "historical": false,
+          "verified_in_current_capture": true
+        }
+      ],
+      "language": "fr",
+      "scope": "Article tarifaire général ; service et date d’effet à confirmer."
+    },
+    {
+      "id": "terms",
+      "title": "Conditions générales",
+      "url": "https://menagesimple.com/conditions-generales/",
+      "final_url": "https://menagesimple.com/conditions-generales/",
+      "http_status": 200,
+      "checked_at": "2026-11-10T09:00:48.042930+00:00",
+      "sha256": "d06a2eb918a42440971594ea3b543753a63b5979ed7225276005dfb449cd93a1",
+      "published_modified_metadata": [
+        "2025-07-22T08:25:04+00:00",
+        "2026-07-15T07:37:16+00:00"
+      ],
+      "displayed_version": "15 juillet 2026",
+      "excerpts": [
+        {
+          "id": "terms-notice",
+          "quote": "48 heures à l’avance.",
+          "observed": "2026-11-10",
+          "historical": false,
+          "verified_in_current_capture": true
+        },
+        {
+          "id": "terms-fee",
+          "quote": "facturé à 90%.",
+          "observed": "2026-11-10",
+          "historical": false,
+          "verified_in_current_capture": true
+        },
+        {
+          "id": "terms-reference",
+          "quote": "point 10d.",
+          "observed": "2026-11-10",
+          "historical": false,
+          "verified_in_current_capture": true
+        },
+        {
+          "id": "terms-cancellation",
+          "quote": "10c. Annulation",
+          "observed": "2026-11-10",
+          "historical": false,
+          "verified_in_current_capture": true
+        },
+        {
+          "id": "terms-photo",
+          "quote": "10d. Photographies",
+          "observed": "2026-11-10",
+          "historical": false,
+          "verified_in_current_capture": true
+        },
+        {
+          "id": "terms-employer",
+          "quote": "qualité d’employeur de l’agent de ménage",
+          "observed": "2026-11-10",
+          "historical": false,
+          "verified_in_current_capture": true
+        },
+        {
+          "id": "terms-administration",
+          "quote": "gestion du paiement des salaires",
+          "observed": "2026-11-10",
+          "historical": false,
+          "verified_in_current_capture": true
+        }
+      ],
+      "language": "fr",
+      "scope": "Placement privé et mandat : cocontractant employeur ; contrats signés à vérifier."
+    },
+    {
+      "id": "faq",
+      "title": "Questions fréquentes",
+      "url": "https://menagesimple.com/questions-frequentes-menage/",
+      "final_url": "https://menagesimple.com/questions-frequentes-menage/",
+      "http_status": 200,
+      "checked_at": "2026-11-10T09:00:48.370573+00:00",
+      "sha256": "dece7e0502996c370da306c0181cbba67842e43f42d6e0d23f230699da360338",
+      "published_modified_metadata": [
+        "2025-07-29T09:08:03+00:00",
+        "2026-11-04T08:56:41+00:00"
+      ],
+      "displayed_version": "Date d’effet non confirmée.",
+      "excerpts": [
+        {
+          "id": "faq-notice",
+          "quote": "Annulation gratuite jusqu’à 48H avant le ménage",
+          "observed": "2026-11-10",
+          "historical": false,
+          "verified_in_current_capture": true
+        },
+        {
+          "id": "faq-products",
+          "quote": "Les produits de nettoyage sont inclus.",
+          "observed": "2026-11-10",
+          "historical": false,
+          "verified_in_current_capture": true
+        },
+        {
+          "id": "faq-employer",
+          "quote": "Les clients de MénageSimple sont les employeurs.",
+          "observed": "2026-11-10",
+          "historical": false,
+          "verified_in_current_capture": true
+        }
+      ],
+      "language": "fr",
+      "scope": "Services de placement et mandat de gestion de MénageSimple."
+    },
+    {
+      "id": "home",
+      "title": "Accueil",
+      "url": "https://menagesimple.com/",
+      "final_url": "https://menagesimple.com/",
+      "http_status": 200,
+      "checked_at": "2026-11-10T09:00:48.846512+00:00",
+      "sha256": "88ff72c486adaff5fdb44bac1589ed796a4dc05691da937990c0c23d0b3685dc",
+      "published_modified_metadata": [
+        "2025-07-16T15:43:14+00:00",
+        "2026-11-04T09:04:43+00:00"
+      ],
+      "displayed_version": "Date d’effet non confirmée.",
+      "excerpts": [
+        {
+          "id": "home-equipment",
+          "quote": "Les produits de nettoyage sont inclus. Pour un ménage standard, prévoyez votre aspirateur et votre balai-serpillière",
+          "observed": "2026-11-10",
+          "historical": false,
+          "verified_in_current_capture": true
+        }
+      ],
+      "language": "fr",
+      "scope": "Ménage standard ; options et fin de bail à distinguer."
+    },
+    {
+      "id": "english",
+      "title": "Guide en anglais",
+      "url": "https://menagesimple.com/en/home-cleaning-french-speaking-switzerland/",
+      "final_url": "https://menagesimple.com/en/home-cleaning-french-speaking-switzerland/",
+      "http_status": 200,
+      "checked_at": "2026-11-10T09:00:49.186729+00:00",
+      "sha256": "a7b9e85b0eed2153a7dcfc0b1458bebbb979583c4575e86bc6092b4c0d6c6a94",
+      "published_modified_metadata": [
+        "2026-05-12T09:58:45+00:00",
+        "2026-11-10T07:35:30+00:00",
+        "2026-05-12T09:58:45+00:00",
+        "2026-11-10T07:35:30+00:00"
+      ],
+      "displayed_version": "Date d’effet non confirmée.",
+      "excerpts": [
+        {
+          "id": "english-products",
+          "quote": "you provide the basic cleaning products",
+          "observed": "2026-11-10",
+          "historical": false,
+          "verified_in_current_capture": true
+        },
+        {
+          "id": "english-delegation",
+          "quote": "The agency takes care of everything",
+          "observed": "2026-11-10",
+          "historical": false,
+          "verified_in_current_capture": true
+        },
+        {
+          "id": "english-assurance",
+          "quote": "No paperwork, no legal risk.",
+          "observed": "2026-11-10",
+          "historical": false,
+          "verified_in_current_capture": true
+        },
+        {
+          "id": "english-model",
+          "quote": "With a company, everything is delegated.",
+          "observed": "2026-11-10",
+          "historical": false,
+          "verified_in_current_capture": true
+        }
+      ],
+      "language": "en",
+      "scope": "Présentation générale de modèles de ménage ; identité de l’employeur non explicitée pour le modèle d’agence."
+    }
+  ],
+  "observations": [
+    "Le 10 novembre, la lecture directe de l’article tarifaire donne 48 h. Le cas à 24 h du 9 novembre est conservé comme preuve historique, sans affirmer une mise en cohérence de toutes les variantes de page.",
+    "Le guide anglais actuel ne contient pas d’affirmation explicite selon laquelle l’agence serait l’employeur légal. Sa formulation de délégation ne prouve pas un transfert de ce rôle."
+  ]
+}

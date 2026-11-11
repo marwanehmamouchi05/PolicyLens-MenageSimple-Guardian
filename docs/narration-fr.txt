@@ -1,0 +1,23 @@
+SCRIPT ORAL — FRANÇAIS — MAXIMUM TROIS MINUTES
+Lire uniquement les passages entre guillemets. Viser un débit naturel ; les actions sont détaillées dans ENREGISTREMENT_FR.txt.
+
+0:00–0:20 — Le besoin
+« Les clients de MénageSimple devraient retrouver la même promesse sur chaque page. PolicyLens aide l’équipe à comparer les informations, comprendre les différences et décider ce qu’il faut clarifier avant de publier. Les preuves restent accessibles et la décision reste humaine. »
+
+0:20–0:50 — Annulation : un cas historique
+« Le neuf novembre, l’article tarifaire annonçait vingt-quatre heures pour annuler gratuitement, contre quarante-huit dans les conditions et la FAQ. La lecture directe du dix novembre donne désormais quarante-huit heures. Je conserve donc cet exemple comme cas historique, clairement daté, pour démontrer la correction. Le calculateur illustre un écart possible d’attentes, pas une facture réelle. »
+
+0:50–1:15 — Pourquoi le contexte compte
+« Sur l’employeur, la réponse demande davantage de prudence. La FAQ désigne les clients ; le guide anglais évoque une délégation complète. Gérer les salaires, assurances ou cotisations ne suffit pas à devenir l’employeur. Les textes peuvent concerner des modèles différents. PolicyLens laisse donc ce point à clarifier, avec une question simple : quel modèle s’applique au service réservé ? »
+
+1:15–1:50 — Une nouvelle information
+« Je saisis un article fictif annonçant douze heures. Le moteur compare cette valeur aux règles enregistrées et relève un écart potentiel. L’URL est seulement déclarée : le logiciel n’affirme pas avoir trouvé cet article en ligne. Je remplace douze par quarante-huit dans la même saisie. Le contrôle devient compatible, sans effacer le constat ni son historique. »
+
+1:50–2:20 — Corriger et revérifier
+« Revenons à l’ancien extrait tarifaire. Je charge une formulation dans une copie locale, en indiquant les conditions supposées confirmées. Le moteur recalcule et résout ce contrôle simulé. Un délai différent ferait réapparaître l’écart. L’historique conserve l’avant et l’après. Le site de MénageSimple n’est jamais modifié. »
+
+2:20–2:45 — Décision et rapport
+« Le réviseur peut accepter, modifier, rejeter ou demander une précision. Pour l’employeur, je demande justement une clarification : la revue ne transforme pas une ambiguïté en certitude. Le rapport français rassemble les preuves, l’impact possible, les incertitudes et les prochaines actions, avec un export imprimable et un rapport JSON. »
+
+2:45–3:00 — Validation
+« Cette version a passé cinquante-trois tests et soixante-quatre vérifications de navigateur. L’interface et les erreurs sont en français ; les citations originales sont conservées. C’est un prototype local vérifiable, dont les règles doivent être confirmées par l’entreprise. »
