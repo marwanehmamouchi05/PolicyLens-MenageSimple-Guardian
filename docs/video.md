@@ -1,3 +1,7 @@
+## État : première version rejetée par le candidat
+
+Cette version est conservée comme essai ; elle ne constitue pas la vidéo finale de candidature. Le lien ne doit pas être utilisé dans le formulaire. Le montage doit être revu selon le retour du candidat.
+
 # Présentation française
 
 Vidéo réelle de l’application déployée, 175 secondes, 1920 × 1080, 25 images/seconde. Gros plans, panneaux explicatifs et légendes françaises ajoutés au montage. Aucun écran ou résultat applicatif inventé.

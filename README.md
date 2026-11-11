@@ -6,9 +6,9 @@ PolicyLens transforme des formulations dispersées en constats documentés, puis
 
 > **English introduction.** A focused, French-language policy-consistency review tool: dated evidence, conservative comparisons, human decisions and a genuine local correction/recheck workflow. No production-site editing, runtime AI inference or autonomous crawling.
 
-[Application HTTPS](https://policylens.54-173-165-46.sslip.io/) · [Présentation française — 2 min 55](https://youtu.be/W54PfL6ECXQ) · [Code source](https://github.com/marwanehmamouchi05/PolicyLens-MenageSimple-Guardian) · [Démarrer](#démarrage-local) · [Tests](#tests-et-validation) · [Script français](docs/narration-fr.txt)
+[Application HTTPS](https://policylens.54-173-165-46.sslip.io/) · [Code source](https://github.com/marwanehmamouchi05/PolicyLens-MenageSimple-Guardian) · [Démarrer](#démarrage-local) · [Tests](#tests-et-validation) · [Script français](docs/narration-fr.txt)
 
-**Publication vérifiée le 11 novembre 2026 :** [application AWS](https://policylens.54-173-165-46.sslip.io/), accessible sans compte. Disponibilité prévue jusqu’au 12 décembre inclus (heure du Maroc). La [présentation française de 2 min 55](https://youtu.be/W54PfL6ECXQ) est publiée en non répertoriée : vraie capture AWS, narration de synthèse française suisse, légendes et sous-titres. Lecture testée ; requête sans cookie : HTTP 200, vidéo lisible, non privée.
+**Publication vérifiée le 11 novembre 2026 :** [application AWS](https://policylens.54-173-165-46.sslip.io/), accessible sans compte. Disponibilité prévue jusqu’au 12 décembre inclus (heure du Maroc). La présentation vidéo est en cours de révision après retour du candidat. La première version publiée n’est pas retenue comme vidéo finale de candidature.
 
 ![Tableau de bord réel](assets/screenshots/public-aws-verified.png)
 
