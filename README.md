@@ -74,7 +74,7 @@ python -m unittest discover -v
 
 La copie de publication a passé **58 tests Python** : 53 cas métier et HTTP existants, plus 5 contrôles de l’adaptateur public (isolation, réinitialisation, attributs du cookie, origine et limites de requêtes). Voir [le journal](docs/validation-python.txt). La syntaxe JavaScript est vérifiée.
 
-Le parcours navigateur du checkpoint métier avait passé 64 assertions ; il est conservé dans `browser_smoke_fr.js`. Ce résultat historique ne constitue pas une validation AWS. La validation propre à la copie de publication et la validation distante seront distinguées dans [le dossier de validation](docs/validation.md).
+Le parcours de la copie publique a passé 66 assertions navigateur sur l’adaptateur local : les 64 contrôles métier et deux vérifications d’isolation / réinitialisation. Voir docs/validation-browser-public-local.json. Ce résultat ne constitue pas une validation AWS. La validation propre à la copie de publication et la validation distante seront distinguées dans [le dossier de validation](docs/validation.md).
 
 ## Architecture et sécurité du démonstrateur
 
