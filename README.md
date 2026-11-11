@@ -6,11 +6,11 @@ PolicyLens transforme des formulations dispersées en constats documentés, puis
 
 > **English introduction.** A focused, French-language policy-consistency review tool: dated evidence, conservative comparisons, human decisions and a genuine local correction/recheck workflow. No production-site editing, runtime AI inference or autonomous crawling.
 
-[Code source](https://github.com/marwanehmamouchi05/PolicyLens-MenageSimple-Guardian) · [Démarrer](#démarrage-local) · [Tests](#tests-et-validation) · [Script français](docs/narration-fr.txt)
+[Application HTTPS](https://policylens.54-173-165-46.sslip.io/) · [Code source](https://github.com/marwanehmamouchi05/PolicyLens-MenageSimple-Guardian) · [Démarrer](#démarrage-local) · [Tests](#tests-et-validation) · [Script français](docs/narration-fr.txt)
 
-**Publication :** l’URL AWS et la vidéo seront ajoutées uniquement après déploiement, enregistrement et vérification. Aucun lien de démonstration ou de vidéo fictif n’est fourni. Le code est utilisable localement dès maintenant ; la configuration publique est incluse.
+**Publication vérifiée le 11 novembre 2026 :** [application AWS](https://policylens.54-173-165-46.sslip.io/), accessible sans compte. Disponibilité prévue jusqu’au 12 décembre inclus (heure du Maroc). Capture vidéo réelle et kit de narration français fournis séparément ; aucune vidéo avec voix ou URL vidéo n’est présentée comme finalisée.
 
-![Tableau de bord réel](assets/screenshots/tableau-de-bord-final.png)
+![Tableau de bord réel](assets/screenshots/public-aws-verified.png)
 
 ## Le besoin métier
 
@@ -48,7 +48,7 @@ Le texte du site n’est jamais modifié. Un texte non pris en charge ou des con
 
 ## Démarrage local
 
-Python 3.10+ ; aucune dépendance d’application à installer.
+Python 3.9+ (58 tests également exécutés sur Python 3.9.25 dans AWS) ; aucune dépendance d’application à installer.
 
 ```text
 python server.py --ephemeral
@@ -62,7 +62,7 @@ Ouvrir http://127.0.0.1:8879. Arrêter avec Ctrl+C. Pour conserver les décision
 python public_server.py
 ```
 
-Il lit `PORT` (8080 par défaut), écoute sur `0.0.0.0` et fournit `/api/health`. Par défaut, ses cookies sont réservés à HTTPS. Pour tester exclusivement sur cet ordinateur en HTTP, définir `LOCAL_PUBLIC_TEST=1` avant le lancement ; ne jamais activer cette variable dans AWS.
+Il lit `PORT` (8080 par défaut), `BIND_HOST` (`0.0.0.0` par défaut) et `PUBLIC_HOST` (nom HTTPS autorisé) et fournit `/api/health`. Par défaut, ses cookies sont réservés à HTTPS. Pour tester exclusivement sur cet ordinateur en HTTP, définir `LOCAL_PUBLIC_TEST=1` avant le lancement ; ne jamais activer cette variable dans AWS.
 
 Chaque navigateur possède un état temporaire isolé, expirant après 30 minutes d’inactivité. Un bouton réinitialise sa propre démonstration. Les données ne sont pas conservées entre redémarrages du service. Ne pas saisir de données sensibles.
 
@@ -74,7 +74,7 @@ python -m unittest discover -v
 
 La copie de publication a passé **58 tests Python** : 53 cas métier et HTTP existants, plus 5 contrôles de l’adaptateur public (isolation, réinitialisation, attributs du cookie, origine et limites de requêtes). Voir [le journal](docs/validation-python.txt). La syntaxe JavaScript est vérifiée.
 
-Le parcours de la copie publique a passé 66 assertions navigateur sur l’adaptateur local : les 64 contrôles métier et deux vérifications d’isolation / réinitialisation. Voir docs/validation-browser-public-local.json. Ce résultat ne constitue pas une validation AWS. La validation propre à la copie de publication et la validation distante seront distinguées dans [le dossier de validation](docs/validation.md).
+Le parcours de la copie publique a passé 66 assertions navigateur sur l’adaptateur local : les 64 contrôles métier et deux vérifications d’isolation / réinitialisation. Voir docs/validation-browser-public-local.json. Les mêmes 66 assertions passent également sur le véritable domaine HTTPS AWS, sans erreur JavaScript non traitée : [résultats distants](docs/validation-browser-aws.json). Les deux exécutions sont distinguées dans [le dossier de validation](docs/validation.md).
 
 ## Architecture et sécurité du démonstrateur
 
@@ -82,7 +82,7 @@ Le moteur Python déterministe est inchangé. `guardian.py` gère les constats e
 
 `public_server.py` ajoute uniquement une frontière HTTP publique : sessions aléatoires, cookies HttpOnly/SameSite/HTTPS, état en mémoire, plafond de sessions, durée de vie et nombre d’actions bornés, limite de requêtes et de connexions, vérification d’origine et liste fermée des fichiers accessibles. Aucun modèle public coûteux, robot d’exploration, téléchargement de fichiers utilisateur, écriture externe ou base de données.
 
-Ces limites réduisent l’exposition d’un petit démonstrateur ; elles ne constituent pas une certification de sécurité ni une protection anti-DDoS complète. Un déploiement App Runner doit rester limité à une instance et utiliser uniquement des données publiques ou fictives.
+Ces limites réduisent l’exposition d’un petit démonstrateur ; elles ne constituent pas une certification de sécurité ni une protection anti-DDoS complète. Le déploiement réel utilise un service isolé sur un serveur EC2 existant, limité à 160 Mio et 25 % d’un cœur, derrière Caddy. Utiliser uniquement des données publiques ou fictives.
 
 ## Pourquoi un moteur ciblé plutôt qu’une IA à l’exécution ?
 

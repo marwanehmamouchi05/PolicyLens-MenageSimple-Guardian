@@ -1,8 +1,9 @@
-// Call with a Playwright page already opened at the local app in a fresh ephemeral session.
+// Call with a Playwright page opened in a fresh ephemeral session.
 async (page) => {
  const checks=[],errors=[];page.on('pageerror',e=>errors.push(e.message));
  const check=(ok,name)=>{if(!ok)throw Error(name);checks.push(name);};
  await page.waitForSelector('[data-issue="cancellation"]');
+ await page.waitForFunction(()=>document.querySelector('#scenario-result').textContent.includes('79.02'));
  const postClickError=async(selector,path)=>{const response=page.waitForResponse(r=>r.url().endsWith(path)&&r.request().method()==='POST');await page.locator(selector).click();check((await response).status()===400,'Erreur prévue : '+path);await page.waitForFunction(()=>!document.querySelector('#rescan').disabled);};
  const postClick=async(selector,path)=>{const response=page.waitForResponse(r=>r.url().endsWith(path)&&r.request().method()==='POST');await page.locator(selector).click();const r=await response;check(r.status()===200,'Réponse valide : '+path);await page.waitForFunction(()=>!document.querySelector('#rescan').disabled);};
  check(await page.locator('html').getAttribute('lang')==='fr','Tableau de bord en français');
