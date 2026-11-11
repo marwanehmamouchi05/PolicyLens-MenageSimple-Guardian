@@ -50,7 +50,7 @@ class Handler(server.Handler):
         self.new_cookie=None
         if not self.allowed():self.send({'error':'Accès non autorisé depuis cette origine.'},403);return False
         now=time.monotonic();ip=self.client_address[0]
-        # App Runner's trusted proxy supplies the original client address.
+        # The trusted HTTPS reverse proxy supplies the original client address.
         if self.headers.get('X-Forwarded-For'):ip=self.headers['X-Forwarded-For'].split(',')[0].strip()[:64]
         key=hashlib.sha256(ip.encode()).hexdigest()
         with _lock:
@@ -99,7 +99,7 @@ class Handler(server.Handler):
 def main():
     server.APP=SessionProxy()
     port=int(os.getenv('PORT','8080'))
-    http=PublicServer(('0.0.0.0',port),Handler)
+    http=PublicServer((os.getenv('BIND_HOST','0.0.0.0'),port),Handler)
     print('PolicyLens : démonstration publique démarrée.',flush=True)
     try:http.serve_forever()
     except KeyboardInterrupt:pass
