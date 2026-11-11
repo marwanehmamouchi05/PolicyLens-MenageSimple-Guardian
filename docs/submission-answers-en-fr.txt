@@ -1,11 +1,21 @@
 WHAT DID YOU BUILD OR PRODUCE?
 
-I built PolicyLens — MénageSimple Guardian, a runnable local application with a French interface, French error messages and French HTML/JSON audit reports. It presents four business-review categories: cancellation wording, employer responsibilities, contract cross-references, and cleaning products/equipment. Each combines dated source quotations and links, customer implications, possible legitimate explanations, a recommended action and recorded human review.
+I built PolicyLens — MénageSimple Guardian, a runnable application deployed over public HTTPS on AWS, also available locally with a French interface, French error messages and French HTML/JSON audit reports. It presents four business-review categories: cancellation wording, employer responsibilities, contract cross-references, and cleaning products/equipment. Each combines dated source quotations and links, customer implications, possible legitimate explanations, a recommended action and recorded human review.
 
 The cancellation demonstration reads an edited local snapshot, recomputes the comparison, resolves a matching rule and flags a new mismatch. The 24-hour excerpt is explicitly historical: the direct page reading on 10 November gave 48 hours. The employer case uses the existing conservative comparison engine to distinguish a generic delegation description from MénageSimple’s customer-employer and administrative-mandate arrangement; it remains a clarification issue, without a legal conclusion. Reviewers can also compare newly entered structured cancellation deadlines or fee percentages against saved rules. Entered URLs are unverified metadata, not proof of live discovery. The application preserves the calculator, review decisions, local history and exports. No Qwen model, training, V10 research or production-site editing is part of Guardian.
 
 QU’AVEZ-VOUS CONSTRUIT OU PRODUIT ?
 
-J’ai construit PolicyLens — MénageSimple Guardian, une application locale utilisable, avec une interface, des erreurs et des rapports HTML/JSON en français. Elle présente quatre catégories à examiner : les conditions d’annulation, les responsabilités de l’employeur, les renvois contractuels et les produits / équipements de nettoyage. Chaque constat réunit des citations datées et leurs liens, les conséquences possibles pour le client, les explications légitimes, une action recommandée et des décisions humaines enregistrées.
+J’ai construit PolicyLens — MénageSimple Guardian, une application utilisable sur AWS en HTTPS public et disponible localement, avec une interface, des erreurs et des rapports HTML/JSON en français. Elle présente quatre catégories à examiner : les conditions d’annulation, les responsabilités de l’employeur, les renvois contractuels et les produits / équipements de nettoyage. Chaque constat réunit des citations datées et leurs liens, les conséquences possibles pour le client, les explications légitimes, une action recommandée et des décisions humaines enregistrées.
 
 La démonstration d’annulation lit une copie locale modifiée, recalcule la comparaison, résout une règle concordante et relève un nouvel écart. L’extrait à 24 heures est explicitement historique : la lecture directe du 10 novembre donnait 48 heures. Le cas de l’employeur utilise le moteur prudent existant pour distinguer une description générale de délégation du modèle client-employeur et du mandat administratif de MénageSimple ; il reste à clarifier, sans conclusion juridique. Le réviseur peut aussi comparer de nouveaux délais ou pourcentages structurés aux règles enregistrées. Les URL saisies sont des références non vérifiées, sans prétention de découverte en ligne. L’application conserve le calculateur, les décisions, l’historique local et les exports. Aucun modèle Qwen, entraînement, V10 ou changement du site réel ne fait partie de Guardian.
+
+
+Validation: 58 Python tests and 66 browser assertions passed on the deployed HTTPS application. Public reviews are private to each browser and temporary; local mode can preserve decisions. A 175-second French presentation with a disclosed synthetic Swiss French voice is published as an unlisted video.
+
+Validation : 58 tests Python et 66 assertions navigateur réussis sur l’application HTTPS déployée. Les revues publiques sont privées à chaque navigateur et temporaires ; le mode local peut conserver les décisions. Une présentation française de 175 secondes, avec voix de synthèse suisse déclarée, est publiée en vidéo non répertoriée.
+
+
+Application : https://policylens.54-173-165-46.sslip.io/
+GitHub : https://github.com/marwanehmamouchi05/PolicyLens-MenageSimple-Guardian
+Video / Vidéo : https://youtu.be/W54PfL6ECXQ

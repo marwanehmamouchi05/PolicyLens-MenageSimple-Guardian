@@ -1,9 +1,9 @@
 {
   "date": "2026-11-11",
-  "files_checked": 37,
+  "files_checked": 47,
   "findings": [],
   "notes": [
-    "Pattern-based secret/privacy check plus selected-file review. Not a guarantee that all possible secrets can be detected.",
-    "No research Git history, credentials, local state, virtual environments or private databases included."
+    "Pattern scan and selected-file review. No guarantee that all secrets can be detected.",
+    "No research history, credentials, local state, environment, private database or account billing detail included."
   ]
 }

@@ -1,23 +1,15 @@
-SCRIPT ORAL — FRANÇAIS — MAXIMUM TROIS MINUTES
-Lire uniquement les passages entre guillemets. Viser un débit naturel ; les actions sont détaillées dans ENREGISTREMENT_FR.txt.
+NARRATION FINALE FRANÇAISE — VOIX DE SYNTHÈSE FRANÇAIS SUISSE
 
-0:00–0:20 — Le besoin
-« Les clients de MénageSimple devraient retrouver la même promesse sur chaque page. PolicyLens aide l’équipe à comparer les informations, comprendre les différences et décider ce qu’il faut clarifier avant de publier. Les preuves restent accessibles et la décision reste humaine. »
+Vingt-quatre ou quarante-huit heures pour annuler sans frais : la différence peut compter. Une capture du neuf novembre indiquait vingt-quatre heures, contre quarante-huit dans les conditions. La lecture directe du lendemain donnait quarante-huit heures. PolicyLens présente donc ce cas comme historique, avec ses preuves datées.
 
-0:20–0:50 — Annulation : un cas historique
-« Le neuf novembre, l’article tarifaire annonçait vingt-quatre heures pour annuler gratuitement, contre quarante-huit dans les conditions et la FAQ. La lecture directe du dix novembre donne désormais quarante-huit heures. Je conserve donc cet exemple comme cas historique, clairement daté, pour démontrer la correction. Le calculateur illustre un écart possible d’attentes, pas une facture réelle. »
+Pour deux heures à quarante-trois francs quatre-vingt-dix, la réservation représente quatre-vingt-sept francs quatre-vingts. Avec quatre-vingt-dix pour cent de frais tardifs, l'écart illustratif atteint soixante-dix-neuf francs et deux centimes. Ce n'est pas une perte constatée : c'est un risque concret de malentendu pour le client.
 
-0:50–1:15 — Pourquoi le contexte compte
-« Sur l’employeur, la réponse demande davantage de prudence. La FAQ désigne les clients ; le guide anglais évoque une délégation complète. Gérer les salaires, assurances ou cotisations ne suffit pas à devenir l’employeur. Les textes peuvent concerner des modèles différents. PolicyLens laisse donc ce point à clarifier, avec une question simple : quel modèle s’applique au service réservé ? »
+J'ai construit PolicyLens Guardian, une application en français accessible sur AWS, avec son code public sur GitHub. Quatre sujets sont réunis : annulation, employeur, renvois contractuels et matériel. Chaque constat rassemble les citations originales, les liens, le contexte, l'impact possible et une action. Le responsable comprend quoi examiner et pourquoi. J'ai retenu des règles ciblées : la recherche Qwen, séparée, produisait encore des faux positifs.
 
-1:15–1:50 — Une nouvelle information
-« Je saisis un article fictif annonçant douze heures. Le moteur compare cette valeur aux règles enregistrées et relève un écart potentiel. L’URL est seulement déclarée : le logiciel n’affirme pas avoir trouvé cet article en ligne. Je remplace douze par quarante-huit dans la même saisie. Le contrôle devient compatible, sans effacer le constat ni son historique. »
+L'outil ne considère pas chaque différence comme une erreur. Le guide anglais évoque une délégation complète, tandis que la FAQ désigne les clients comme employeurs. Gérer les salaires ou les assurances ne suffit pas à devenir l'employeur légal. Je demande donc une précision sur le modèle du service réservé. La décision est conservée, mais le statut reste à clarifier. Le jugement humain reste central.
 
-1:50–2:20 — Corriger et revérifier
-« Revenons à l’ancien extrait tarifaire. Je charge une formulation dans une copie locale, en indiquant les conditions supposées confirmées. Le moteur recalcule et résout ce contrôle simulé. Un délai différent ferait réapparaître l’écart. L’historique conserve l’avant et l’après. Le site de MénageSimple n’est jamais modifié. »
+Pour l'annulation, je charge une correction dans une copie, puis confirme les hypothèses de la simulation. Le moteur recalcule et le contrôle passe à résolu. Un autre délai ferait revenir l'écart. La revérification utilise réellement le nouveau contenu. L'historique conserve l'avant et l'après. Le site de MénageSimple n'est jamais modifié.
 
-2:20–2:45 — Décision et rapport
-« Le réviseur peut accepter, modifier, rejeter ou demander une précision. Pour l’employeur, je demande justement une clarification : la revue ne transforme pas une ambiguïté en certitude. Le rapport français rassemble les preuves, l’impact possible, les incertitudes et les prochaines actions, avec un export imprimable et un rapport JSON. »
+Le rapport français réunit les preuves, les décisions et l'historique. Le réviseur peut aussi comparer un délai ou un pourcentage saisi aux références enregistrées. Le texte libre et l'URL fournie ne sont pas analysés automatiquement.
 
-2:45–3:00 — Validation
-« Cette version a passé cinquante-trois tests et soixante-quatre vérifications de navigateur. L’interface et les erreurs sont en français ; les citations originales sont conservées. C’est un prototype local vérifiable, dont les règles doivent être confirmées par l’entreprise. »
+Cinquante-huit tests Python et soixante-six vérifications de navigateur ont réussi sur AWS. PolicyLens transforme des informations dispersées en actions vérifiables, pour clarifier les engagements avant qu'ils n'affectent les clients. Vérifier. Clarifier. Corriger.

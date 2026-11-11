@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-11",
+  "url": "https://www.youtube.com/watch?v=W54PfL6ECXQ",
+  "request_cookie": false,
+  "http_status": 200,
+  "playability": {
+    "status": "OK",
+    "playableInEmbed": true,
+    "miniplayer": {
+      "miniplayerRenderer": {
+        "playbackMode": "PLAYBACK_MODE_ALLOW"
+      }
+    },
+    "contextParams": "Q0FFU0FnZ0M="
+  },
+  "details": {
+    "lengthSeconds": "175",
+    "isPrivate": false,
+    "isUnpluggedCorpus": false
+  }
+}

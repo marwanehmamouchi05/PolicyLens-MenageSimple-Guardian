@@ -1,12 +1,14 @@
-# Relecture de candidature
+# Évaluation de la candidature — preuves et limites
 
-| Critère | Preuve visible | Faiblesse à traiter |
+| Critère | Preuve livrée | Limite à reconnaître |
 |---|---|---|
-| Exécution /25 | Application réelle, tests, nouveau dépôt et configuration de publication | HTTPS AWS et vidéo doivent être effectivement accessibles avant de remplir leurs champs. |
-| Valeur métier /20 | Quatre catégories, impact client, calcul illustratif et rapport | Pas d’impact commercial mesuré ; règles à confirmer avec l’entreprise. |
-| Jugement et portée /15 | Cas tarifaire daté, ambiguïté employeur maintenue, pas de conclusion juridique automatique | Couverture volontairement limitée à des preuves sélectionnées. |
-| IA et vérification humaine /15 | Recherche séparée documentée avec limites, décisions versionnées | Les preuves sont sélectionnées par un réviseur ; ce n’est pas une découverte autonome. |
-| Tests et reproduction /15 | Tests fournis, absence de dépendances d’application, contrôles d’isolation | L’acceptation locale ne remplace pas la validation du déploiement réel. |
-| Communication /10 | Français simple, captures, script et séquence courte | Enregistrement et hébergement de la vidéo doivent être vérifiés. |
+| Exécution /25 | Application publique AWS en HTTPS, quatre constats intégrés, calculateur, revue et simulation fonctionnels | Petit démonstrateur, sans engagement de disponibilité de production |
+| Valeur métier /20 | Risque de malentendu illustré par CHF 79.02, sources comparées, rapport français avec actions | Aucune perte réelle ou amélioration commerciale mesurée |
+| Jugement et portée /15 | Cas 24 / 48 h explicitement historique ; ambiguïté employeur maintenue ; règles ciblées | Couverture limitée aux sources choisies et aux contextes structurés |
+| IA et vérification humaine /15 | Recherche Qwen séparée documentée ; faux positifs reconnus ; demandes de précision humaines | Pas de supériorité de précision démontrée par comparaison appariée |
+| Tests et reproduction /15 | 58 tests Python, 66 assertions sur le domaine AWS ; code et commandes disponibles | Pas de test de charge ou certification de sécurité |
+| Communication /10 | Interface et rapports français, vidéo de moins de trois minutes, preuves et limites expliquées | Voix de synthèse déclarée, pas un enregistrement du candidat |
 
-Aucun score total, score parfait ou résultat de recrutement n’est promis. Les trois URL finales ne doivent être ajoutées au formulaire qu’une fois chacune accessible et contrôlée.
+Aucun score parfait ni résultat de recrutement promis. La vidéo montre la véritable application sur AWS, avec des panneaux explicatifs ajoutés au montage ; aucune interface ou résultat n’est inventé.
+
+Disponibilité prévue jusqu’au 12 décembre 2026 inclus, heure du Maroc. Sessions publiques temporaires et propres à chaque navigateur. Aucun accès aux réservations, aucune modification du site MénageSimple.

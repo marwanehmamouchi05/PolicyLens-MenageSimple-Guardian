@@ -1,0 +1,174 @@
+1
+00:00:00,710 --> 00:00:04,116
+Vingt-quatre ou quarante-huit heures pour annuler
+sans frais la différence
+
+2
+00:00:03,996 --> 00:00:08,095
+peut compter Une capture du neuf novembre
+indiquait vingt-quatre heures
+
+3
+00:00:08,296 --> 00:00:12,716
+contre quarante-huit dans les conditions La
+lecture directe du lendemain
+
+4
+00:00:12,596 --> 00:00:17,203
+donnait quarante-huit heures PolicyLens présente
+donc ce cas comme historique
+
+5
+00:00:17,417 --> 00:00:18,673
+avec ses preuves datées
+
+6
+00:00:20,722 --> 00:00:24,482
+Pour deux heures à quarante-trois francs quatre-
+vingt-dix la réservation
+
+7
+00:00:24,362 --> 00:00:28,811
+représente quatre-vingt-sept francs quatre-vingts
+Avec quatre-vingt-dix
+
+8
+00:00:28,691 --> 00:00:32,670
+pour cent de frais tardifs l'écart illustratif
+atteint soixante-dix-neuf
+
+9
+00:00:32,550 --> 00:00:37,561
+francs et deux centimes Ce n'est pas une perte
+constatée c'est
+
+10
+00:00:37,441 --> 00:00:40,264
+un risque concret de malentendu pour le client
+
+11
+00:00:43,695 --> 00:00:47,370
+J'ai construit PolicyLens Guardian une application
+en français accessible
+
+12
+00:00:47,250 --> 00:00:52,021
+sur AWS avec son code public sur GitHub Quatre
+sujets sont
+
+13
+00:00:51,901 --> 00:00:57,743
+réunis annulation employeur renvois contractuels
+et matériel Chaque
+
+14
+00:00:57,623 --> 00:01:02,236
+constat rassemble les citations originales les
+liens le contexte l'impact
+
+15
+00:01:02,116 --> 00:01:07,191
+possible et une action Le responsable comprend
+quoi examiner et pourquoi
+
+16
+00:01:08,009 --> 00:01:12,345
+J'ai retenu des règles ciblées la recherche Qwen
+séparée produisait
+
+17
+00:01:12,225 --> 00:01:13,679
+encore des faux positifs
+
+18
+00:01:15,738 --> 00:01:20,686
+L'outil ne considère pas chaque différence comme
+une erreur Le guide
+
+19
+00:01:20,566 --> 00:01:24,623
+anglais évoque une délégation complète tandis que
+la FAQ désigne les
+
+20
+00:01:24,503 --> 00:01:29,764
+clients comme employeurs Gérer les salaires ou les
+assurances ne suffit
+
+21
+00:01:29,644 --> 00:01:35,061
+pas à devenir l'employeur légal Je demande donc
+une précision sur
+
+22
+00:01:34,941 --> 00:01:40,311
+le modèle du service réservé La décision est
+conservée mais le
+
+23
+00:01:40,191 --> 00:01:45,545
+statut reste à clarifier Le jugement humain reste
+central
+
+24
+00:01:48,722 --> 00:01:53,092
+Pour l'annulation je charge une correction dans
+une copie puis confirme
+
+25
+00:01:52,972 --> 00:01:58,170
+les hypothèses de la simulation Le moteur
+recalcule et le contrôle
+
+26
+00:01:58,050 --> 00:02:05,389
+passe à résolu Un autre délai ferait revenir
+l'écart La revérification
+
+27
+00:02:05,269 --> 00:02:10,498
+utilise réellement le nouveau contenu L'historique
+conserve l'avant
+
+28
+00:02:10,378 --> 00:02:15,436
+et l'après Le site de MénageSimple n'est jamais
+modifié
+
+29
+00:02:20,738 --> 00:02:25,029
+Le rapport français réunit les preuves les
+décisions et l'historique
+
+30
+00:02:26,019 --> 00:02:29,748
+Le réviseur peut aussi comparer un délai ou un
+pourcentage saisi
+
+31
+00:02:29,628 --> 00:02:34,670
+aux références enregistrées Le texte libre et
+l'URL fournie ne sont
+
+32
+00:02:34,550 --> 00:02:36,483
+pas analysés automatiquement
+
+33
+00:02:38,640 --> 00:02:41,602
+Cinquante-huit tests Python et soixante-six
+vérifications de navigateur
+
+34
+00:02:41,482 --> 00:02:45,816
+ont réussi sur AWS PolicyLens transforme des
+informations dispersées
+
+35
+00:02:45,696 --> 00:02:48,782
+en actions vérifiables pour clarifier les
+engagements avant qu'ils n'affectent
+
+36
+00:02:48,662 --> 00:02:53,804
+les clients Vérifier Clarifier Corriger
