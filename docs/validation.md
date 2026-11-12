@@ -10,7 +10,7 @@ node --check impact.js
 node --check graph-explorer.js
 ```
 
-106 tests Python réussis le 12 novembre 2026 : docs/audit/tests-payment.txt. Le compte inclut les 20 tests du module de graphe et les régressions du moteur existant.
+106 tests Python réussis le 12 novembre 2026 : docs/audit/tests-final-local.txt. Le compte inclut les 20 tests du module de graphe et les régressions du moteur existant.
 
 Pour les contrôles navigateur, installer Playwright dans un environnement de test séparé (aucune dépendance nécessaire au serveur), puis lancer le serveur public en mode HTTP local :
 
@@ -26,7 +26,7 @@ Résultats locaux effectivement exécutés : 116 contrôles généraux (results.
 
 Les scripts respectent la limite publique de 120 demandes/minute ; le parcours général attend 59 secondes entre deux phases. Un échec réseau ponctuel d’un premier essai a été corrigé par une exécution complète réussie, sans suppression de la protection. Les preuves anciennes ne doivent pas être confondues avec une nouvelle exécution.
 
-Les contrôles AWS et l’extraction propre sont enregistrés dans des fichiers distincts après réalisation. Pas de test de charge, d’audit externe de sécurité ou de mesure d’impact commercial.
+Les contrôles AWS sont enregistrés dans docs/validation/aws ; l’extraction propre est documentée dans docs/audit/clean-extraction-tests.txt. Pas de test de charge, d’audit externe de sécurité ou de mesure d’impact commercial.
 
 ## Résultats distants exécutés
 

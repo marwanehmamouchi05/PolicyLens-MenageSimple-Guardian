@@ -34,7 +34,7 @@ Python 3.9+ sans dépendances applicatives supplémentaires :
 python server.py --ephemeral
 ```
 
-Ouvrir `http://127.0.0.1:8879/`. Pour conserver uniquement les revues de l'ancien moteur local, lancer sans `--ephemeral`. Le graphe de démonstration est **en mémoire** et se réinitialise à chaque nouveau processus.
+Ouvrir `http://127.0.0.1:8879/`. Pour conserver les décisions de revue entre deux lancements locaux, lancer sans `--ephemeral`. Le graphe de démonstration est **en mémoire** et se réinitialise à chaque nouveau processus.
 
 Adaptateur public avec isolation des sessions et limites de ressources :
 
@@ -52,13 +52,14 @@ python -m py_compile *.py
 node --check app.js
 node --check impact.js
 node --check navigation.js
+node --check graph-explorer.js
 ```
 
 Les **106 tests Python** ont été exécutés avec succès le 12 novembre 2026 après les corrections et la simplification de l’interface. Le journal est conservé dans `docs/audit/tests-final-local.txt`. Le contrôle du navigateur est exécuté séparément par `browser_release.cjs` ; ses 116 contrôles datés figurent dans `docs/validation/browser/results.json`. Les 24 contrôles ciblés sur le paiement et la carte sont dans `docs/validation/browser/graph-explorer-results.json`. Ces contrôles locaux ne prouvent pas un déploiement sur AWS.
 
 L’interface affiche une rubrique à la fois : **Accueil**, **À vérifier**, **Pages liées**, **Essayer**, **Rapport**. Dans **Essayer**, trois onglets séparent la correction historique, la comparaison d’une saisie et le calculateur. Les preuves supplémentaires et les décisions se déplient à la demande.
 
-**Présentation validée par Marwane le 12 novembre 2026.** La publication et le déploiement sont autorisés ; les résultats distants sont documentés après leur vérification.
+**Présentation validée par Marwane le 12 novembre 2026.** La publication, le déploiement et la vérification HTTPS sont terminés ; leurs résultats sont disponibles dans docs/validation/aws.
 
 ## Architecture
 

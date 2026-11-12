@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-12",
+  "missing_markdown_targets": [],
+  "retired_video_references": [],
+  "checked_remote_urls": [
+    {
+      "url": "https://github.com/marwanehmamouchi05/PolicyLens-MenageSimple-Guardian",
+      "http": 200
+    },
+    {
+      "url": "https://menagesimple.com/",
+      "http": 200
+    },
+    {
+      "url": "https://menagesimple.com/conditions-generales/",
+      "http": 200
+    },
+    {
+      "url": "https://menagesimple.com/en/home-cleaning-french-speaking-switzerland/",
+      "http": 200
+    },
+    {
+      "url": "https://menagesimple.com/femme-de-menage-fully/",
+      "http": 200
+    },
+    {
+      "url": "https://menagesimple.com/femme-de-menage-rolle/",
+      "http": 200
+    },
+    {
+      "url": "https://menagesimple.com/menage-regulier-lausanne/",
+      "http": 200
+    },
+    {
+      "url": "https://menagesimple.com/prix-menage-domicile-suisse/",
+      "http": 200
+    },
+    {
+      "url": "https://menagesimple.com/questions-frequentes-menage/",
+      "http": 200
+    },
+    {
+      "url": "https://policylens.54-173-165-46.sslip.io/api/health",
+      "http": 200
+    },
+    {
+      "url": "https://www.airbnb.fr/rooms/1761780411178216809",
+      "http": 200
+    },
+    {
+      "url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DF2_ufmoYtuc&format=json",
+      "http": 200
+    }
+  ],
+  "remote_failures": [],
+  "repository": {
+    "default_branch": "main",
+    "description": "French policy consistency review for MénageSimple: evidence-linked impact graph, correction simulation and human decisions.",
+    "homepage": "https://policylens.54-173-165-46.sslip.io/"
+  },
+  "historical_evidence": "Intermediate test logs are explicitly archived; rollback references are retained and labelled."
+}

@@ -10,9 +10,9 @@ Le service Guardian utilise l’hôte EC2 existant, Caddy pour HTTPS et Python s
 
 Ne pas utiliser cette procédure pour une première installation. Les chemins sont /opt/policylens-guardian/releases et /opt/policylens-guardian/current. Le service écoute sur 127.0.0.1:8889 et conserve PUBLIC_HOST ; LOCAL_PUBLIC_TEST reste absent.
 
-## Retour arrière applicatif
+## Anciennes références — retour arrière uniquement
 
-Avant publication, cible effective vérifiée le 12 novembre : `/opt/policylens-guardian/releases/e67d425ed60b51402a1bc539d3d33f6c966fcdb3`. Le dépôt distant précédent est `02d01073622204b710fafc819f68d1c7707ed2af`, préservé dans l’historique et un tag de rollback.
+Cible historique de l’installation initiale (elle n’est plus active) : `/opt/policylens-guardian/releases/e67d425ed60b51402a1bc539d3d33f6c966fcdb3`. Le dépôt distant précédent est `02d01073622204b710fafc819f68d1c7707ed2af`, préservé dans l’historique et un tag de rollback.
 
 Pour restaurer cette cible, créer un nouveau lien temporaire vers ce répertoire, le déplacer atomiquement sur current puis redémarrer uniquement Guardian. Ne pas modifier Caddy ou le minuteur d’expiration ; ne pas arrêter Nodum. Le script conserve aussi la cible effective dans rollback-COMMIT.txt.
 
@@ -24,7 +24,7 @@ Le contrôle préalable du 12 novembre a retrouvé Guardian actif, Nodum sain et
 
 L’expiration demeure le **12 décembre 2026 à 23:00 UTC**, soit le **13 décembre à 00:00 au Maroc**, fin de journée autorisée du 12 décembre. Seul Guardian s’arrête. L’autorisation de coût reste au maximum 25 USD bruts ; aucun nouveau poste fixe n’est provisionné et le budget AWS ne constitue pas un plafond dur. Les détails de facturation restent privés.
 
-## Résultat final vérifié
+## Résultat final vérifié — version active
 
 Version applicative active : `2ac1017fbce14f17e9d9f8b3991a14012a9c1ba6`. SSM `e164d16d-9cce-42ad-8909-fc4a47d76c30` : succès, code 0. 106 tests sur l’hôte, 140 contrôles navigateur HTTPS, santé 200. Nodum sain et HTTPS 200. Le minuteur reste au 12 décembre 23:00 UTC.
 
