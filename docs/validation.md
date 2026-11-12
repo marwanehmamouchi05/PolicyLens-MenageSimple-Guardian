@@ -10,7 +10,7 @@ node --check impact.js
 node --check graph-explorer.js
 ```
 
-105 tests Python réussis le 12 novembre 2026 : docs/audit/tests-payment.txt. Le compte inclut les 20 tests du module de graphe et les régressions du moteur existant.
+106 tests Python réussis le 12 novembre 2026 : docs/audit/tests-payment.txt. Le compte inclut les 20 tests du module de graphe et les régressions du moteur existant.
 
 Pour les contrôles navigateur, installer Playwright dans un environnement de test séparé (aucune dépendance nécessaire au serveur), puis lancer le serveur public en mode HTTP local :
 

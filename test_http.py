@@ -58,3 +58,19 @@ class HTTPTests(unittest.TestCase):
         self.assertNotIn('Clarity concern',body.decode())
 
 if __name__=='__main__':unittest.main(verbosity=2)
+
+
+class RestartTests(unittest.TestCase):
+    def test_http_listener_can_restart_after_serving_a_request(self):
+        # Linux retains the server side of HTTP/1.0 connections in TIME_WAIT.
+        # Reproduce a real request, close the listener, then immediately rebind.
+        self.assertTrue(server.LocalServer.allow_reuse_address)
+        first=server.LocalServer(('127.0.0.1',0),server.Handler)
+        port=first.server_port
+        thread=threading.Thread(target=first.serve_forever,daemon=True);thread.start()
+        try:
+            with urllib.request.urlopen(f'http://127.0.0.1:{port}/api/health',timeout=5) as response:
+                self.assertEqual(response.status,200)
+        finally:first.shutdown();first.server_close();thread.join()
+        second=server.LocalServer(('127.0.0.1',port),server.Handler)
+        second.server_close()

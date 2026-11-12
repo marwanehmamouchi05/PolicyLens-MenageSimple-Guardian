@@ -10,7 +10,7 @@ ROOT=Path(__file__).resolve().parent
 LOCK=threading.RLock()
 APP=None
 class LocalServer(ThreadingHTTPServer):
-    allow_reuse_address=False
+    allow_reuse_address=True
 class Handler(BaseHTTPRequestHandler):
     def send_error(self,code,message=None,explain=None):
         return self.send({'error':'Cette demande ne peut pas être traitée. Vérifiez l’adresse et le type de demande.'},code)

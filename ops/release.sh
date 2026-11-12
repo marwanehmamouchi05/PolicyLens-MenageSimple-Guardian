@@ -26,7 +26,9 @@ ln -s "$TARGET" "$ROOT/.current-$REV"
 mv -Tf "$ROOT/.current-$REV" "$ROOT/current"
 ok=0
 if systemctl restart policylens-guardian.service; then
- for attempt in 1 2 3 4 5; do
+ attempt=0
+ while test "$attempt" -lt 90; do
+  attempt=$((attempt+1))
   if curl -fsS --max-time 3 http://127.0.0.1:8889/api/health; then ok=1; break; fi
   sleep 1
  done
