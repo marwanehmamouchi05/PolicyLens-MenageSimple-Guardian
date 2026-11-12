@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-12T10:33:41.920Z",
+  "target": "https://policylens.54-173-165-46.sslip.io",
+  "passed": 24,
+  "failed": 0,
+  "checks": [
+    "Paiement visible avec statut prudent",
+    "Ancienne preuve qualifiée, autre preuve repliée",
+    "Décision paiement enregistrée",
+    "Décision paiement conservée après rechargement",
+    "Lien du constat vers la bonne règle",
+    "Paiement : actions de vérification visibles",
+    "Vue d’ensemble : cinq règles réelles",
+    "Vue d’ensemble : sept pages indexées",
+    "Seize liens issus des preuves",
+    "Surbrillance des quatre pages liées à l’employeur",
+    "Sélection au clavier ouvre le détail de la règle",
+    "Sélection d’une page ouvre ses preuves",
+    "Citation de la page sélectionnée",
+    "Exemple lance un vrai calcul à 72 heures",
+    "Trois références actuelles signalées",
+    "Liste métier des pages à réexaminer",
+    "Retirer l’hypothèse recalcule les états",
+    "Carte en plein écran",
+    "Retour du plein écran",
+    "Vue d’ensemble sans débordement à 1440",
+    "Vue d’ensemble sans débordement à 1024",
+    "Vue d’ensemble sans débordement à 390",
+    "Export réel inclut paiement et revue",
+    "Aucune erreur JavaScript"
+  ],
+  "errors": []
+}

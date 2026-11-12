@@ -4,7 +4,7 @@
 
 > **English.** An evidence-first, French-language policy consistency review prototype. It compares structured statements, links related indexed claims and policies in an impact graph, simulates corrections, supports human review, and exports reports. It does not crawl arbitrary URLs or edit the company's production site.
 
-**Démonstration AWS précédente :** https://policylens.54-173-165-46.sslip.io/ — *cette URL héberge l'ancienne version jusqu'à confirmation du redéploiement*. Le présent code n'est **pas** déclaré déployé sur AWS. La vidéo précédente a été retirée de la candidature et sera remplacée par un enregistrement correspondant à cette version.
+**Démonstration HTTPS :** https://policylens.54-173-165-46.sslip.io/ . La version intégrant le graphe et les cinq sujets a été déployée et vérifiée le 12 novembre. Les résultats distants sont dans `docs/validation/aws`. La vidéo précédente a été retirée ; le nouvel enregistrement est en préparation.
 
 ## Le besoin métier
 
@@ -54,7 +54,7 @@ node --check impact.js
 node --check navigation.js
 ```
 
-Les **105 tests Python** ont été exécutés avec succès le 12 novembre 2026 après les corrections et la simplification de l’interface. Le journal est conservé dans `docs/audit/tests-payment.txt`. Le contrôle du navigateur est exécuté séparément par `browser_release.cjs` ; ses 114 contrôles datés figurent dans `docs/validation/browser/results.json`. Les 24 contrôles ciblés sur le paiement et la carte sont dans `docs/validation/browser/graph-explorer-results.json`. Ces contrôles locaux ne prouvent pas un déploiement sur AWS.
+Les **105 tests Python** ont été exécutés avec succès le 12 novembre 2026 après les corrections et la simplification de l’interface. Le journal est conservé dans `docs/audit/tests-payment.txt`. Le contrôle du navigateur est exécuté séparément par `browser_release.cjs` ; ses 116 contrôles datés figurent dans `docs/validation/browser/results.json`. Les 24 contrôles ciblés sur le paiement et la carte sont dans `docs/validation/browser/graph-explorer-results.json`. Ces contrôles locaux ne prouvent pas un déploiement sur AWS.
 
 L’interface affiche une rubrique à la fois : **Accueil**, **À vérifier**, **Pages liées**, **Essayer**, **Rapport**. Dans **Essayer**, trois onglets séparent la correction historique, la comparaison d’une saisie et le calculateur. Les preuves supplémentaires et les décisions se déplient à la demande.
 
@@ -68,7 +68,7 @@ Une seule application Python et une seule interface HTML/CSS/JS : `guardian.py`,
 
 ## Publication / récupération
 
-Le déploiement en service actuel n'a pas été mis à jour par ce ZIP. Voir `docs/deployment-aws.md` pour l'ancien déploiement, ses limites financières et son retour arrière ; ne pas intervenir sur les services voisins. Préserver le commit de référence GitHub `02d01073622204b710fafc819f68d1c7707ed2af` tant que la nouvelle version n'a pas passé le contrôle visuel et la vérification HTTPS finale.
+La mise à jour utilise le service existant, sans modifier Nodum. Voir `docs/deployment-aws.md` pour l'ancien déploiement, ses limites financières et son retour arrière ; ne pas intervenir sur les services voisins. Préserver le commit de référence GitHub `02d01073622204b710fafc819f68d1c7707ed2af` tant que la nouvelle version n'a pas passé le contrôle visuel et la vérification HTTPS finale.
 
 Code : https://github.com/marwanehmamouchi05/PolicyLens-MenageSimple-Guardian
 

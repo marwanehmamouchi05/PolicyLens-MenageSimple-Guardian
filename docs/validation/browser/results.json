@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-12T10:11:18.635Z",
+  "date": "2026-11-12T10:36:42.730Z",
   "target": "http://127.0.0.1:8893",
-  "passed": 114,
+  "passed": 116,
   "failed": 0,
   "checks": [
     "Une seule rubrique visible à l’accueil",
@@ -86,6 +86,7 @@
     "Comparaisons mises à jour avec la politique",
     "Employeur : aucune validation juridique par simple égalité",
     "Réponse : /impact/api/add",
+    "Retour visible des trois comparaisons après ajout",
     "Ajout réellement enregistré",
     "Nouveau conflit produit par le moteur",
     "Second visiteur sans ajout du premier",
@@ -93,6 +94,7 @@
     "Réponse : /impact/api/simulate",
     "Correction : comparaisons résolues calculées",
     "La valeur compatible ne conserve aucun faux conflit",
+    "Résolution réellement recalculée visible dans Essayer",
     "Citation originale préservée",
     "Correction explicitement simulée et non vérifiée",
     "Historique du graphe conservé au rechargement",

@@ -67,7 +67,7 @@
           "action_recommandee": "Conserver la preuve historique."
         },
         {
-          "identifiant": "SYN-mwde17nz",
+          "identifiant": "SYN-mwdexvnp",
           "url_source": "https://menagesimple.com/",
           "valeur_de_travail": "48",
           "valeur_initialement_indexee": "12",
@@ -325,24 +325,24 @@
   ],
   "historique": [
     {
-      "date": "2026-11-12T10:11:16.371760+00:00",
+      "date": "2026-11-12T10:36:40.458061+00:00",
       "action": "Ajout fourni par le réviseur",
-      "identifiant": "SYN-mwde17nz",
+      "identifiant": "SYN-mwdexvnp",
       "avant": null,
       "apres": "12",
       "comparaisons_resolues": [],
       "comparaisons_creees": []
     },
     {
-      "date": "2026-11-12T10:11:16.737139+00:00",
+      "date": "2026-11-12T10:36:40.890446+00:00",
       "action": "Correction simulée",
-      "identifiant": "SYN-mwde17nz",
+      "identifiant": "SYN-mwdexvnp",
       "avant": "12",
       "apres": "48",
       "comparaisons_resolues": [
-        "difference::CAN-CGV::SYN-mwde17nz",
-        "difference::CAN-FAQ::SYN-mwde17nz",
-        "difference::CAN-PRIX::SYN-mwde17nz"
+        "difference::CAN-CGV::SYN-mwdexvnp",
+        "difference::CAN-FAQ::SYN-mwdexvnp",
+        "difference::CAN-PRIX::SYN-mwdexvnp"
       ],
       "comparaisons_creees": []
     }

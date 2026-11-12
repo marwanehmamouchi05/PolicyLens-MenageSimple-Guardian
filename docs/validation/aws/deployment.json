@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-12",
+  "runtime_commit": "f50e00f7ccb58e7de616507f81b7ab507ac1f075",
+  "ssm_command": "109a002e-7dd5-49b9-838a-691f03eb2152",
+  "status": "Success",
+  "response_code": 0,
+  "host_tests_passed": 105,
+  "archive_sha256": "72bad23874a64157ba0596d7eaf40fcde384b2682e3c02e9a6979149d00fe708",
+  "health": {
+    "ok": true
+  },
+  "memory_bytes_observed": 11993088,
+  "memory_limit_bytes": 167772160,
+  "cpu_quota": "25% of one core",
+  "nodum": "healthy, HTTPS 200",
+  "expiration_utc": "2026-12-12T23:00:00Z",
+  "notes": "A startup health retry produced one connection-refused message before the following successful probe. No deployment failure or Nodum restart."
+}

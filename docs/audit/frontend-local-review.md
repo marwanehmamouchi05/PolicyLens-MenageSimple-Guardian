@@ -13,3 +13,5 @@ Retour local possible : fichiers avant simplification préservés dans work/guar
 Cinq catégories dans À vérifier, dont le paiement avec trois preuves qualifiées. Vue d’ensemble des cinq règles, sept pages et seize liens réels ; sélection au clavier, preuves par page, plein écran, hypothèse de 72 h et liste d’actions recalculée.
 
 Validation locale : 105 tests Python réussis ; 114 contrôles navigateur généraux et 24 ciblés réussis. Résultats datés conservés. Le design précédent a été apprécié par Marwane ; cette extension reste à lui présenter avant publication.
+
+Accord explicite reçu le 12 novembre pour poursuivre GitHub, AWS et le master prompt. Le blocage de publication décrit ci-dessus est donc levé. Un retour de calcul visible a été ajouté aux essais avancés ; le parcours local complet compte maintenant 116 contrôles réussis.

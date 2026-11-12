@@ -22,7 +22,7 @@ node browser_graph_explorer.cjs
 
 Sous PowerShell, affecter chaque variable avec `$env:NOM='valeur'` avant le lancement. Les scripts utilisent Chrome installé. PLAYWRIGHT_MODULE permet de fournir le chemin d’une installation Playwright existante. TARGET_URL et PROOF_DIR permettent de cibler un autre service et de conserver des preuves séparées (premier script).
 
-Résultats locaux effectivement exécutés : 114 contrôles généraux (results.json), puis 24 contrôles ciblés (graph-explorer-results.json), 0 erreur JavaScript. Les téléchargements ont été ouverts et vérifiés : rapports français, décisions, preuves et historiques réels. Les erreurs, états vides, chargement, réseau indisponible, mobile, clavier, plein écran, deux visiteurs et protections de saisie ont été exercés.
+Résultats locaux effectivement exécutés : 116 contrôles généraux (results.json), puis 24 contrôles ciblés (graph-explorer-results.json), 0 erreur JavaScript. Les téléchargements ont été ouverts et vérifiés : rapports français, décisions, preuves et historiques réels. Les erreurs, états vides, chargement, réseau indisponible, mobile, clavier, plein écran, deux visiteurs et protections de saisie ont été exercés.
 
 Les scripts respectent la limite publique de 120 demandes/minute ; le parcours général attend 59 secondes entre deux phases. Un échec réseau ponctuel d’un premier essai a été corrigé par une exécution complète réussie, sans suppression de la protection. Les preuves anciennes ne doivent pas être confondues avec une nouvelle exécution.
 
