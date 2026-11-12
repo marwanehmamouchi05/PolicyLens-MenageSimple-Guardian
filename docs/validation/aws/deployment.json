@@ -1,18 +1,30 @@
 {
-  "date": "2026-11-12",
-  "runtime_commit": "f50e00f7ccb58e7de616507f81b7ab507ac1f075",
-  "ssm_command": "109a002e-7dd5-49b9-838a-691f03eb2152",
+  "date": "2026-11-12T16:13:34.855465+00:00",
+  "runtime_commit": "2ac1017fbce14f17e9d9f8b3991a14012a9c1ba6",
+  "ssm_command": "e164d16d-9cce-42ad-8909-fc4a47d76c30",
   "status": "Success",
   "response_code": 0,
-  "host_tests_passed": 105,
-  "archive_sha256": "72bad23874a64157ba0596d7eaf40fcde384b2682e3c02e9a6979149d00fe708",
+  "host_tests_passed": 106,
+  "archive_sha256": "bf1568160ae60b525a486e7862701328b03e55d514eaeff912163d8c6fd7bfda",
   "health": {
     "ok": true
   },
-  "memory_bytes_observed": 11993088,
+  "memory_bytes_observed": 11956224,
   "memory_limit_bytes": 167772160,
   "cpu_quota": "25% of one core",
-  "nodum": "healthy, HTTPS 200",
+  "nodum": "healthy, HTTPS 200, containers not restarted",
   "expiration_utc": "2026-12-12T23:00:00Z",
-  "notes": "A startup health retry produced one connection-refused message before the following successful probe. No deployment failure or Nodum restart."
+  "browser_general_passed": 116,
+  "browser_targeted_passed": 24,
+  "browser_total_passed": 140,
+  "rollback_target": "f50e00f7ccb58e7de616507f81b7ab507ac1f075",
+  "restart_control": {
+    "without_reuse": "Errno 98 Address already in use",
+    "with_reuse": "Immediate rebind OK"
+  },
+  "preceding_attempt": {
+    "commit": "12a6725f57399cf016969130c126a1892022f39d",
+    "ssm_command": "cf6f510d-50cd-4d31-9067-691fe6ee1912",
+    "result": "Health failure, automatic rollback; corrected by enabling HTTP address reuse and extending the bounded health wait."
+  }
 }

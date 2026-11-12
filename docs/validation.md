@@ -27,3 +27,11 @@ Résultats locaux effectivement exécutés : 116 contrôles généraux (results.
 Les scripts respectent la limite publique de 120 demandes/minute ; le parcours général attend 59 secondes entre deux phases. Un échec réseau ponctuel d’un premier essai a été corrigé par une exécution complète réussie, sans suppression de la protection. Les preuves anciennes ne doivent pas être confondues avec une nouvelle exécution.
 
 Les contrôles AWS et l’extraction propre sont enregistrés dans des fichiers distincts après réalisation. Pas de test de charge, d’audit externe de sécurité ou de mesure d’impact commercial.
+
+## Résultats distants exécutés
+
+Le 12 novembre, sur `https://policylens.54-173-165-46.sslip.io` : 116 contrôles généraux et 24 ciblés, zéro erreur JavaScript non traitée. Voir `docs/validation/aws/results.json`, `graph-explorer-results.json` et `release-content-verification.json`. Les contrôles font correspondre la réponse d’impact à la valeur de la requête pour ne pas confondre une actualisation en arrière-plan avec le calcul demandé. Le navigateur revient au premier visiteur après l’ouverture d’un second contexte.
+
+Des essais intermédiaires du script de navigateur ont exposé des attentes trop courtes et une réponse d’actualisation capturée à la place de la réponse demandée. Les contrôles finaux complets ont été réexécutés avec les attentes et le rapprochement de requête corrects. Le défaut de redémarrage HTTP détecté pendant la publication a été reproduit sur Linux, corrigé et testé ; son retour arrière n’est pas masqué.
+
+La vidéo finale dure 176 secondes. Le MP4 a été décodé intégralement sans erreur ; 13 images représentatives ont été extraites et examinées. Les sous-titres français sont intégrés à l’image et également fournis en SRT. Lecture YouTube contrôlée, visibilité non répertoriée et contrôles YouTube sans problème signalé.

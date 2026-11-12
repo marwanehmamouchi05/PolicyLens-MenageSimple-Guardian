@@ -1,0 +1,230 @@
+1
+00:00:00,338 --> 00:00:04,982
+Bonjour, je suis Marwane Hmamouchi. Une règle
+change quelles pages
+
+2
+00:00:05,018 --> 00:00:06,118
+faut-il vérifier
+
+3
+00:00:07,338 --> 00:00:10,428
+Dans les conditions de MénageSimple, la section
+sept renvoie les
+
+4
+00:00:10,462 --> 00:00:14,065
+frais d’annulation au point dix d. Pourtant, dix
+d concerne
+
+5
+00:00:14,100 --> 00:00:17,915
+les photographies l’annulation est en dix c. Un
+client ou
+
+6
+00:00:17,950 --> 00:00:20,300
+le support peut donc suivre le mauvais renvoi.
+
+7
+00:00:22,297 --> 00:00:26,272
+Voici PolicyLens Guardian. L’accueil donne accès
+aux vérifications,
+
+8
+00:00:26,441 --> 00:00:29,676
+aux pages liées, aux essais et au rapport. Chaque
+point
+
+9
+00:00:29,711 --> 00:00:33,194
+réunit les preuves et une prochaine action. Le
+but préparer
+
+10
+00:00:33,229 --> 00:00:35,421
+une correction complète et compréhensible.
+
+11
+00:00:36,338 --> 00:00:40,040
+Dans Pages liées, je choisis le préavis
+d’annulation. La même
+
+12
+00:00:40,075 --> 00:00:44,038
+règle apparaît dans les conditions, la FAQ et
+l’article tarifaire.
+
+13
+00:00:44,275 --> 00:00:46,940
+Je peux ouvrir chaque preuve, avec son adresse et
+sa
+
+14
+00:00:46,975 --> 00:00:50,440
+date. L’ancien extrait à vingt-quatre heures est
+identifié comme
+
+15
+00:00:50,475 --> 00:00:54,075
+historique les textes actuels indiquent quarante-
+huit heures.
+
+16
+00:00:56,350 --> 00:00:59,688
+La vue d’ensemble relie cinq règles aux sept
+pages enregistrées.
+
+17
+00:00:59,912 --> 00:01:03,078
+Une page peut parler de plusieurs sujets. Je
+sélectionne une
+
+18
+00:01:03,112 --> 00:01:06,365
+règle pour retrouver ses sources cette carte rend
+les dépendances
+
+19
+00:01:06,400 --> 00:01:09,350
+visibles, sans prétendre avoir exploré tout le
+site.
+
+20
+00:01:11,338 --> 00:01:15,252
+Imaginons maintenant un préavis de soixante-douze
+heures. Le calcul
+
+21
+00:01:15,288 --> 00:01:19,290
+repère trois références actuelles à réexaminer.
+La liste indique
+
+22
+00:01:19,325 --> 00:01:22,202
+où relire les textes et quelle action préparer.
+C’est une
+
+23
+00:01:22,238 --> 00:01:26,303
+hypothèse le site réel reste inchangé. Je peux la
+retirer
+
+24
+00:01:26,338 --> 00:01:28,450
+et revenir à la référence enregistrée.
+
+25
+00:01:31,338 --> 00:01:35,202
+Dans Essayer, j’ajoute un exemple explicitement
+fictif un délai
+
+26
+00:01:35,238 --> 00:01:38,765
+de douze heures. L’application compare cette
+valeur structurée
+
+27
+00:01:38,800 --> 00:01:41,940
+et fait apparaître de nouveaux écarts. Je corrige
+ensuite la
+
+28
+00:01:41,975 --> 00:01:45,990
+copie à quarante-huit heures, puis je revérifie.
+Les comparaisons
+
+29
+00:01:46,025 --> 00:01:49,812
+sont recalculées, et les écarts liés à cet
+exemple disparaissent.
+
+30
+00:01:50,050 --> 00:01:54,152
+L’historique conserve douze puis quarante-huit.
+Une adresse saisie
+
+31
+00:01:54,188 --> 00:01:57,790
+n’est pas consultée automatiquement la citation
+reste celle fournie
+
+32
+00:01:57,825 --> 00:01:58,913
+par le réviseur.
+
+33
+00:02:02,300 --> 00:02:05,865
+Pour l’employeur, une gestion administrative
+déléguée ne suffit
+
+34
+00:02:05,900 --> 00:02:09,515
+pas à désigner l’employeur légal. Je demande une
+précision sur
+
+35
+00:02:09,550 --> 00:02:13,478
+le service réservé. La décision est enregistrée,
+mais le point
+
+36
+00:02:13,512 --> 00:02:16,928
+reste à clarifier. Pour le paiement aussi, une
+ancienne preuve
+
+37
+00:02:16,962 --> 00:02:18,650
+non retrouvée reste à vérifier.
+
+38
+00:02:20,334 --> 00:02:23,550
+Le calculateur illustre l’effet possible d’un
+ancien désaccord
+
+39
+00:02:23,585 --> 00:02:26,680
+sur les frais. À trente-six heures de préavis,
+cet exemple
+
+40
+00:02:26,715 --> 00:02:29,449
+donne soixante-dix-neuf francs et deux centimes
+d’écart, sans
+
+41
+00:02:29,484 --> 00:02:31,404
+prétendre mesurer une perte réelle.
+
+42
+00:02:32,349 --> 00:02:35,461
+Le rapport réunit les preuves, les décisions et
+l’historique des
+
+43
+00:02:35,496 --> 00:02:38,583
+essais. Je peux le consulter ou télécharger les
+données de
+
+44
+00:02:38,618 --> 00:02:39,412
+ma session.
+
+45
+00:02:40,336 --> 00:02:43,349
+J’ai réalisé ce prototype en Python avec une
+interface web
+
+46
+00:02:43,384 --> 00:02:47,112
+simple. L’IA m’a aidé à le développer les
+comparaisons sont
+
+47
+00:02:47,147 --> 00:02:50,566
+testables et les décisions restent humaines. Code
+et tests sont
+
+48
+00:02:50,601 --> 00:02:55,415
+publics. PolicyLens vérifier, relier, corriger.

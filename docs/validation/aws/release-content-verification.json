@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-12T16:03:36.062168+00:00",
+  "runtime_commit": "2ac1017fbce14f17e9d9f8b3991a14012a9c1ba6",
+  "static_files": [
+    {
+      "file": "index.html",
+      "https_status": 200,
+      "sha256": "40aa86106bdbdab3a3b3cb2fe029b3ae327f211e36081978ae121663e036f401",
+      "matches_release": true
+    },
+    {
+      "file": "app.js",
+      "https_status": 200,
+      "sha256": "e624e2e0e7537fd39db924d4ac1bd73ff86b9895d84b2cda6ac380a0c87be7c3",
+      "matches_release": true
+    },
+    {
+      "file": "impact.js",
+      "https_status": 200,
+      "sha256": "fa5649a3b55c9a60f31fdf1ce1791b8baea63b36d7a057cbe495838cddeaf27b",
+      "matches_release": true
+    },
+    {
+      "file": "navigation.js",
+      "https_status": 200,
+      "sha256": "65e496b26268c7661e2c1cc8845bf3b03342e220bb4fbbb00277bca04cd7dd98",
+      "matches_release": true
+    },
+    {
+      "file": "graph-explorer.js",
+      "https_status": 200,
+      "sha256": "0c0069d426268584714f5324544188132e38c90178421d8b57f190545cd5a73a",
+      "matches_release": true
+    },
+    {
+      "file": "style.css",
+      "https_status": 200,
+      "sha256": "4a753f6f1ba6047f53533c9754d1d92b498e381aa20b4cef98c03e7aed85d0d3",
+      "matches_release": true
+    }
+  ],
+  "health": {
+    "http": 200,
+    "body": {
+      "ok": true
+    }
+  },
+  "fresh_visitor_findings": 5,
+  "secure_cookie_flags": {
+    "__Host-policylens_session": true,
+    "HttpOnly": true,
+    "Secure": true,
+    "SameSite=Strict": true
+  },
+  "nodum_https": 200
+}

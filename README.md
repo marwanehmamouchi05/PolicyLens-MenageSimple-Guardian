@@ -4,7 +4,7 @@
 
 > **English.** An evidence-first, French-language policy consistency review prototype. It compares structured statements, links related indexed claims and policies in an impact graph, simulates corrections, supports human review, and exports reports. It does not crawl arbitrary URLs or edit the company's production site.
 
-**Démonstration HTTPS :** https://policylens.54-173-165-46.sslip.io/ . La version intégrant le graphe et les cinq sujets a été déployée et vérifiée le 12 novembre. Les résultats distants sont dans `docs/validation/aws`. La vidéo précédente a été retirée ; le nouvel enregistrement est en préparation.
+**Démonstration HTTPS :** https://policylens.54-173-165-46.sslip.io/ . La version intégrant le graphe et les cinq sujets a été déployée et vérifiée le 12 novembre. Les résultats distants sont dans `docs/validation/aws`. La [vidéo finale française de 2 min 56](https://youtu.be/F2_ufmoYtuc) montre le vrai parcours déployé, avec narration de synthèse et sous-titres.
 
 ## Le besoin métier
 
@@ -68,7 +68,7 @@ Une seule application Python et une seule interface HTML/CSS/JS : `guardian.py`,
 
 ## Publication / récupération
 
-La mise à jour utilise le service existant, sans modifier Nodum. Voir `docs/deployment-aws.md` pour l'ancien déploiement, ses limites financières et son retour arrière ; ne pas intervenir sur les services voisins. Préserver le commit de référence GitHub `02d01073622204b710fafc819f68d1c7707ed2af` tant que la nouvelle version n'a pas passé le contrôle visuel et la vérification HTTPS finale.
+La mise à jour utilise le service existant, sans modifier Nodum. Voir `docs/deployment-aws.md` pour le déploiement, ses limites financières et son retour arrière ; ne pas intervenir sur les services voisins. Préserver le commit de référence GitHub `02d01073622204b710fafc819f68d1c7707ed2af` comme checkpoint de récupération. Les contrôles de la version déployée ont réussi.
 
 Code : https://github.com/marwanehmamouchi05/PolicyLens-MenageSimple-Guardian
 
@@ -81,3 +81,11 @@ Licence MIT. Les citations restent la propriété de leurs auteurs ; voir `THIRD
 ![Carte des règles et pages](assets/screenshots/graphe.png)
 
 Les fonctions et leurs limites sont décrites ci-dessus. Voir la [validation reproductible](docs/validation.md).
+
+## Validation sur le site réel
+
+106 tests Python ont passé sur l’hôte AWS, puis 116 contrôles de parcours et 24 contrôles ciblés ont réussi sur le domaine HTTPS : rapports réellement téléchargés, deux sessions distinctes, simulation, revue, mobile, clavier et plein écran. Les six fichiers de l’interface servis en ligne correspondent octet pour octet à la version vérifiée. Voir [les preuves distantes](docs/validation/aws/deployment.json).
+
+[![Voir la démonstration française](assets/screenshots/miniature-video.jpg)](https://youtu.be/F2_ufmoYtuc)
+
+Disponibilité de la démonstration prévue jusqu’à la fin du 12 décembre 2026, heure du Maroc. Le service voisin Nodum reste inchangé.

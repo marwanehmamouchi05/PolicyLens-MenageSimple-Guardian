@@ -1,0 +1,3 @@
+Error: 72 h : trois références actuelles à examiner
+    at check (C:\Users\marwa\Documents\Codex\2026-11-09\files-pasted-by-the-user-stonks\outputs\PolicyLens-Guardian-2-Release\browser_release.cjs:7:55)
+    at C:\Users\marwa\Documents\Codex\2026-11-09\files-pasted-by-the-user-stonks\outputs\PolicyLens-Guardian-2-Release\browser_release.cjs:24:116

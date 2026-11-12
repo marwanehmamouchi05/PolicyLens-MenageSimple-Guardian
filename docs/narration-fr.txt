@@ -1,0 +1,21 @@
+Bonjour, je suis Marwane Hmamouchi. Une règle change : quelles pages faut-il vérifier ?
+
+Dans les conditions de MénageSimple, la section sept renvoie les frais d’annulation au point dix d. Pourtant, dix d concerne les photographies ; l’annulation est en dix c. Un client ou le support peut donc suivre le mauvais renvoi.
+
+Voici PolicyLens Guardian. L’accueil donne accès aux vérifications, aux pages liées, aux essais et au rapport. Chaque point réunit les preuves et une prochaine action. Le but : préparer une correction complète et compréhensible.
+
+Dans Pages liées, je choisis le préavis d’annulation. La même règle apparaît dans les conditions, la FAQ et l’article tarifaire. Je peux ouvrir chaque preuve, avec son adresse et sa date. L’ancien extrait à vingt-quatre heures est identifié comme historique ; les textes actuels indiquent quarante-huit heures.
+
+La vue d’ensemble relie cinq règles aux sept pages enregistrées. Une page peut parler de plusieurs sujets. Je sélectionne une règle pour retrouver ses sources : cette carte rend les dépendances visibles, sans prétendre avoir exploré tout le site.
+
+Imaginons maintenant un préavis de soixante-douze heures. Le calcul repère trois références actuelles à réexaminer. La liste indique où relire les textes et quelle action préparer. C’est une hypothèse : le site réel reste inchangé. Je peux la retirer et revenir à la référence enregistrée.
+
+Dans Essayer, j’ajoute un exemple explicitement fictif : un délai de douze heures. L’application compare cette valeur structurée et fait apparaître de nouveaux écarts. Je corrige ensuite la copie à quarante-huit heures, puis je revérifie. Les comparaisons sont recalculées, et les écarts liés à cet exemple disparaissent. L’historique conserve douze puis quarante-huit. Une adresse saisie n’est pas consultée automatiquement ; la citation reste celle fournie par le réviseur.
+
+Pour l’employeur, une gestion administrative déléguée ne suffit pas à désigner l’employeur légal. Je demande une précision sur le service réservé. La décision est enregistrée, mais le point reste à clarifier. Pour le paiement aussi, une ancienne preuve non retrouvée reste à vérifier.
+
+Le calculateur illustre l’effet possible d’un ancien désaccord sur les frais. À trente-six heures de préavis, cet exemple donne soixante-dix-neuf francs et deux centimes d’écart, sans prétendre mesurer une perte réelle.
+
+Le rapport réunit les preuves, les décisions et l’historique des essais. Je peux le consulter ou télécharger les données de ma session.
+
+J’ai réalisé ce prototype en Python avec une interface web simple. L’IA m’a aidé à le développer ; les comparaisons sont testables et les décisions restent humaines. Code et tests sont publics. PolicyLens : vérifier, relier, corriger.

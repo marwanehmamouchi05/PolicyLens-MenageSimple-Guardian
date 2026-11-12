@@ -23,3 +23,13 @@ Exécution comme nobody, fichiers protégés, répertoire Nodum inaccessible au 
 Le contrôle préalable du 12 novembre a retrouvé Guardian actif, Nodum sain et Nodum HTTPS 200. Commande SSM : 659d2090-723b-4c17-a6a1-70d7cd245f01, succès. Ces éléments précèdent la nouvelle publication ; ses résultats sont enregistrés séparément.
 
 L’expiration demeure le **12 décembre 2026 à 23:00 UTC**, soit le **13 décembre à 00:00 au Maroc**, fin de journée autorisée du 12 décembre. Seul Guardian s’arrête. L’autorisation de coût reste au maximum 25 USD bruts ; aucun nouveau poste fixe n’est provisionné et le budget AWS ne constitue pas un plafond dur. Les détails de facturation restent privés.
+
+## Résultat final vérifié
+
+Version applicative active : `2ac1017fbce14f17e9d9f8b3991a14012a9c1ba6`. SSM `e164d16d-9cce-42ad-8909-fc4a47d76c30` : succès, code 0. 106 tests sur l’hôte, 140 contrôles navigateur HTTPS, santé 200. Nodum sain et HTTPS 200. Le minuteur reste au 12 décembre 23:00 UTC.
+
+Une tentative intermédiaire a déclenché le retour arrière automatique à cause du port HTTP en attente après fermeture. Le contrôle Linux a reproduit Errno 98 sans réutilisation d’adresse et un redémarrage immédiat réussi avec la correction. Ce cas est maintenant couvert par un test.
+
+La cible de retour immédiat préservée est `/opt/policylens-guardian/releases/f50e00f7ccb58e7de616507f81b7ab507ac1f075` ; l’ancienne version e67d425 reste également disponible. Un redémarrage de cette ancienne version sans réutilisation d’adresse peut nécessiter l’expiration de connexions en attente ; vérifier la santé avant de déclarer le retour réussi. Le checkpoint Git 02d0107 reste conservé dans son tag.
+
+Les commits ultérieurs de documentation et de scripts de test ne sont pas présentés comme un nouveau déploiement applicatif. La livraison vérifie que leurs fichiers d’exécution sont identiques à ce commit actif.

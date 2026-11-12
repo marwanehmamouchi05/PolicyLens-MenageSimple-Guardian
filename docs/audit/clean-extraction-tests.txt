@@ -40,6 +40,7 @@ test_new_information_http (test_http.HTTPTests.test_new_information_http) ... ok
 test_private_files_are_not_served (test_http.HTTPTests.test_private_files_are_not_served) ... ok
 test_recheck_health_and_icon (test_http.HTTPTests.test_recheck_health_and_icon) ... ok
 test_untrusted_host_rejected (test_http.HTTPTests.test_untrusted_host_rejected) ... ok
+test_http_listener_can_restart_after_serving_a_request (test_http.RestartTests.test_http_listener_can_restart_after_serving_a_request) ... ok
 test_add_unseen_synthetic_conflict_automatically (test_impact_graph.PolicyGraphTests.test_add_unseen_synthetic_conflict_automatically) ... ok
 test_change_policy_affects_all_indexed_references (test_impact_graph.PolicyGraphTests.test_change_policy_affects_all_indexed_references) ... ok
 test_contract_reference_fixed_deterministically (test_impact_graph.PolicyGraphTests.test_contract_reference_fixed_deterministically) ... ok
@@ -105,6 +106,6 @@ test_simulation_never_relabels_original_quote_as_verified (test_release_guardrai
 test_unknown_service_cannot_be_marked_aligned (test_release_guardrails.ReleaseGuardrails.test_unknown_service_cannot_be_marked_aligned) ... ok
 
 ----------------------------------------------------------------------
-Ran 105 tests in 2.745s
+Ran 106 tests in 3.249s
 
 OK
