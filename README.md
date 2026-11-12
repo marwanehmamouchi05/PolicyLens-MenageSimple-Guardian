@@ -1,104 +1,83 @@
 # PolicyLens Guardian
 
-**Contrôle de cohérence des engagements clients — Démonstration MénageSimple**
+**Vérifier. Relier. Corriger.** Une application web de démonstration en français pour MénageSimple, développée dans le cadre du recrutement Stonks Holding AG.
 
-PolicyLens transforme des formulations dispersées en constats documentés, puis en décisions de clarification ou de correction. Ce prototype de recrutement est indépendant : ce n’est pas un produit officiel de MénageSimple et il ne bénéficie d’aucune approbation revendiquée de l’entreprise.
+> **English.** An evidence-first, French-language policy consistency review prototype. It compares structured statements, links related indexed claims and policies in an impact graph, simulates corrections, supports human review, and exports reports. It does not crawl arbitrary URLs or edit the company's production site.
 
-> **English introduction.** A focused, French-language policy-consistency review tool: dated evidence, conservative comparisons, human decisions and a genuine local correction/recheck workflow. No production-site editing, runtime AI inference or autonomous crawling.
-
-[Application HTTPS](https://policylens.54-173-165-46.sslip.io/) · [Code source](https://github.com/marwanehmamouchi05/PolicyLens-MenageSimple-Guardian) · [Démarrer](#démarrage-local) · [Tests](#tests-et-validation) · [Script français](docs/narration-fr.txt)
-
-**Publication vérifiée le 11 novembre 2026 :** [application AWS](https://policylens.54-173-165-46.sslip.io/), accessible sans compte. Disponibilité prévue jusqu’au 12 décembre inclus (heure du Maroc). La présentation vidéo est en cours de révision après retour du candidat. La première version publiée n’est pas retenue comme vidéo finale de candidature.
-
-![Tableau de bord réel](assets/screenshots/public-aws-verified.png)
+**Démonstration AWS précédente :** https://policylens.54-173-165-46.sslip.io/ — *cette URL héberge l'ancienne version jusqu'à confirmation du redéploiement*. Le présent code n'est **pas** déclaré déployé sur AWS. La vidéo précédente a été retirée de la candidature et sera remplacée par un enregistrement correspondant à cette version.
 
 ## Le besoin métier
 
-Un client doit comprendre le délai d’annulation, les fournitures à prévoir et son rôle dans la relation de service, quelle que soit la page consultée. Une différence peut être une erreur éditoriale, une évolution de version ou une différence légitime de périmètre. PolicyLens garde ces possibilités visibles et propose une action métier.
+Une modification de règle d'annulation peut demander une vérification des CGV, FAQ, pages tarifaires et pages de service. PolicyLens met en évidence les **références indexées** à examiner pour réduire les oublis, sans affirmer avoir exploré tout le site. L'étude de référence comporte 7 pages et 17 affirmations structurées. Les données factuelles proviennent d'un registre de sources sélectionnées manuellement et sont accompagnées de dates et de réserves.
 
-| Catégorie | Preuves sélectionnées | Traitement |
-|---|---|---|
-| Annulation | [Article tarifaire](https://menagesimple.com/prix-menage-domicile-suisse/), [conditions](https://menagesimple.com/conditions-generales/), [FAQ](https://menagesimple.com/questions-frequentes-menage/) | Cas historique 24 h / 48 h du 9 novembre ; la lecture directe du 10 novembre donnait 48 h. Démonstration datée, sans prétendre à un écart actuel confirmé. |
-| Employeur | [Guide anglais](https://menagesimple.com/en/home-cleaning-french-speaking-switzerland/), conditions et FAQ | Distinguer le rôle d’employeur et la gestion déléguée. Le guide actuel ne désigne pas explicitement l’agence comme employeur légal. Contexte à confirmer. |
-| Renvoi contractuel | Conditions, sections 7 et 10 | Renvoi 10d, photographie ; annulation sous 10c dans la capture du 10 novembre. |
-| Produits et matériel | [Accueil](https://menagesimple.com/), guide et FAQ | Distinguer produits inclus, matériel du client, services et options. Point de clarté à examiner. |
+## Fonctionnalités
 
-Les sources sont sélectionnées manuellement, pas découvertes automatiquement. `sources.json` conserve les citations exactes, dates, langues, périmètres et empreintes des captures. Les preuves anglaises restent dans leur langue ; les explications sont françaises. Les pages peuvent changer après la vérification.
+1. **Vérifications de cohérence.** Comparaison déterministe des délais d'annulation, pourcentages de frais tardifs, renvois contractuels et informations nécessitant un jugement de contexte (employeur, matériel, produits, modalités de paiement). Des variantes légitimes de service ne sont pas déclarées fautives automatiquement.
+2. **Graphe des politiques et analyse d'impact.** Une page dédiée propose une vue d’ensemble interactive, une vue centrée sur une règle, un mode plein écran et une liste d’actions après simulation. Elle relie cinq politiques à leurs pages, affirmations et clauses. Une liste lisible précise les preuves et les statuts pour les seules pages indexées. Une règle hypothétique de 72 h peut révéler les pages à examiner.
+3. **Simulations et revérification.** Correction du texte historique dans Guardian, ainsi qu'ajout/correction d'une affirmation structurée dans le graphe ; vrais recalculs déterministes, résultats avant/après, réinitialisation, aucune écriture vers MénageSimple.
+4. **Preuves et validation humaine.** Citations et URL sources, observation historique/actuelle/non vérifiée, revue humaine avec décision et note. Les affirmations ajoutées par un utilisateur restent toujours « fournies par le réviseur ».
+5. **Outils métier.** Tableau de bord, calculateur de frais CHF, contrôle de renvois entre clauses, rapport HTML imprimable, rapport JSON principal incluant les informations du graphe, rapport JSON d'impact.
 
-## Fonctionnalités visibles
+L'ancien différend 24 h / 48 h est un **cas historique**, pas une incohérence active confirmée. Le renvoi de §7 vers §10d alors que la disposition d'annulation figure en §10c est un cas de référence nécessitant une relecture du texte en vigueur avant toute publication d'un résultat métier. Les descriptions des rôles d'employeur, de matériel et de paiement nécessitent une analyse des prestations et du contrat applicable.
 
-- Quatre catégories de constats, priorités, compteurs calculés et preuves comparées.
-- Revue humaine : accepter, modifier, rejeter ou demander une précision. Une acceptation ne résout pas automatiquement le contexte employeur.
-- Correction d’une copie locale, recalcul effectif et historique avant/après. Une nouvelle différence fait réapparaître le constat.
-- Nouvelle règle structurée : délai d’annulation ou pourcentage de frais tardifs. Exemple : 12 h relève un écart ; 48 h est compatible si le contexte concorde. L’extrait libre n’est pas interprété et l’URL déclarée n’est pas vérifiée.
-- Calculateur décimal : deux heures à CHF 43.90 donnent CHF 87.80 ; 90 % représentent CHF 79.02. Illustration d’attentes possibles, jamais une perte mesurée.
-- Rapport HTML français imprimable et rapport JSON français avec décisions et historique.
+Le point **« Carte, virement ou espèces ? »** est intégré à « À vérifier », aux décisions et aux rapports. Les anciens extraits des pages locales n’ont pas été retrouvés le 12 novembre : ils sont affichés comme non authentifiés, jamais comme preuve d’une contradiction actuelle.
 
-![Revue du rôle de l’employeur](assets/screenshots/employeur-final.png)
+### Démonstration en moins de trois minutes
 
-## La correction et sa revérification
+Ouvrir le tableau de bord, examiner le problème de renvoi contractuel et ses sources ; choisir « Préavis d'annulation » dans le graphe ; proposer 72 h et examiner la liste ; saisir une information **synthétique** à 12 h sur `https://menagesimple.com/` puis corriger localement sa valeur à 48 h ; observer la revérification ; exporter le rapport. Voir `docs/demo-fr.md` pour le script exact.
 
-1. Examiner le cas historique d’annulation et ses preuves datées.
-2. Charger la correction proposée dans la copie locale.
-3. Indiquer explicitement les hypothèses sur le service et les conditions.
-4. Appliquer et revérifier : le moteur compare les nouvelles données ; à 48 h, le contrôle simulé est résolu.
-5. Remplacer 48 par 72 : l’écart revient. Revenir à 48 : le contrôle est à nouveau compatible.
+## Lancement
 
-Le texte du site n’est jamais modifié. Un texte non pris en charge ou des conditions non confirmées ne peuvent pas produire une résolution injustifiée. Une modification du contenu ou des preuves invalide l’approbation associée à leur ancienne version.
+Python 3.9+ sans dépendances applicatives supplémentaires :
 
-## Démarrage local
-
-Python 3.9+ (58 tests également exécutés sur Python 3.9.25 dans AWS) ; aucune dépendance d’application à installer.
-
-```text
+```sh
 python server.py --ephemeral
 ```
 
-Ouvrir http://127.0.0.1:8879. Arrêter avec Ctrl+C. Pour conserver les décisions sur votre ordinateur, utiliser `python server.py` ; `local-state.json` est ignoré par Git. Pour changer de port : `python server.py --ephemeral --port 8880`.
+Ouvrir `http://127.0.0.1:8879/`. Pour conserver uniquement les revues de l'ancien moteur local, lancer sans `--ephemeral`. Le graphe de démonstration est **en mémoire** et se réinitialise à chaque nouveau processus.
 
-### Adaptateur public
+Adaptateur public avec isolation des sessions et limites de ressources :
 
-```text
-python public_server.py
+```sh
+LOCAL_PUBLIC_TEST=1 BIND_HOST=127.0.0.1 PORT=8080 python public_server.py
 ```
 
-Il lit `PORT` (8080 par défaut), `BIND_HOST` (`0.0.0.0` par défaut) et `PUBLIC_HOST` (nom HTTPS autorisé) et fournit `/api/health`. Par défaut, ses cookies sont réservés à HTTPS. Pour tester exclusivement sur cet ordinateur en HTTP, définir `LOCAL_PUBLIC_TEST=1` avant le lancement ; ne jamais activer cette variable dans AWS.
+`LOCAL_PUBLIC_TEST=1` est exclusivement destiné aux tests HTTP locaux ; en production, laisser cette variable absente, servir derrière un proxy HTTPS et configurer `PUBLIC_HOST`. Chaque navigateur bénéficie d'une session distincte ; les corrections de graphe et de Guardian ne sont pas communes. L'application n'interprète aucune URL ni ne télécharge de site au cours de la saisie d'un exemple.
 
-Chaque navigateur possède un état temporaire isolé, expirant après 30 minutes d’inactivité. Un bouton réinitialise sa propre démonstration. Les données ne sont pas conservées entre redémarrages du service. Ne pas saisir de données sensibles.
+## Tests et reproductibilité
 
-## Tests et validation
-
-```text
+```sh
 python -m unittest discover -v
+python -m py_compile *.py
+node --check app.js
+node --check impact.js
+node --check navigation.js
 ```
 
-La copie de publication a passé **58 tests Python** : 53 cas métier et HTTP existants, plus 5 contrôles de l’adaptateur public (isolation, réinitialisation, attributs du cookie, origine et limites de requêtes). Voir [le journal](docs/validation-python.txt). La syntaxe JavaScript est vérifiée.
+Les **105 tests Python** ont été exécutés avec succès le 12 novembre 2026 après les corrections et la simplification de l’interface. Le journal est conservé dans `docs/audit/tests-payment.txt`. Le contrôle du navigateur est exécuté séparément par `browser_release.cjs` ; ses 114 contrôles datés figurent dans `docs/validation/browser/results.json`. Les 24 contrôles ciblés sur le paiement et la carte sont dans `docs/validation/browser/graph-explorer-results.json`. Ces contrôles locaux ne prouvent pas un déploiement sur AWS.
 
-Le parcours de la copie publique a passé 66 assertions navigateur sur l’adaptateur local : les 64 contrôles métier et deux vérifications d’isolation / réinitialisation. Voir docs/validation-browser-public-local.json. Les mêmes 66 assertions passent également sur le véritable domaine HTTPS AWS, sans erreur JavaScript non traitée : [résultats distants](docs/validation-browser-aws.json). Les deux exécutions sont distinguées dans [le dossier de validation](docs/validation.md).
+L’interface affiche une rubrique à la fois : **Accueil**, **À vérifier**, **Pages liées**, **Essayer**, **Rapport**. Dans **Essayer**, trois onglets séparent la correction historique, la comparaison d’une saisie et le calculateur. Les preuves supplémentaires et les décisions se déplient à la demande.
 
-## Architecture et sécurité du démonstrateur
+**Présentation validée par Marwane le 12 novembre 2026.** La publication et le déploiement sont autorisés ; les résultats distants sont documentés après leur vérification.
 
-Le moteur Python déterministe est inchangé. `guardian.py` gère les constats et le workflow ; `employer.py` ajoute les distinctions de rôles ; `new_information.py` adapte les saisies numériques au moteur. L’interface utilise HTML, CSS et JavaScript. `report_fr.py` produit les rapports.
+## Architecture
 
-`public_server.py` ajoute uniquement une frontière HTTP publique : sessions aléatoires, cookies HttpOnly/SameSite/HTTPS, état en mémoire, plafond de sessions, durée de vie et nombre d’actions bornés, limite de requêtes et de connexions, vérification d’origine et liste fermée des fichiers accessibles. Aucun modèle public coûteux, robot d’exploration, téléchargement de fichiers utilisateur, écriture externe ou base de données.
+Une seule application Python et une seule interface HTML/CSS/JS : `guardian.py`, `engine.py`, `public_server.py`, `server.py`, `impact_graph.py` et `impact_integration.py`. Le module du graphe est intégré dans la page et dans l'adaptateur HTTP de Guardian. `sources.json` reste le registre de référence ; `impact_evidence.json` contient des affirmations structurées à rapprocher de ce registre. Les affirmations sans concordance textuelle sont marquées comme index ancien. Le système ne dispose ni de base de données de graphe, ni de modèle IA à l'exécution, ni d'un robot de collecte.
 
-Ces limites réduisent l’exposition d’un petit démonstrateur ; elles ne constituent pas une certification de sécurité ni une protection anti-DDoS complète. Le déploiement réel utilise un service isolé sur un serveur EC2 existant, limité à 160 Mio et 25 % d’un cœur, derrière Caddy. Utiliser uniquement des données publiques ou fictives.
+**Limites :** la saisie structurée est contrôlée mais n'interprète pas automatiquement un nouveau site ; une valeur numérique compatible n'établit pas la validité complète d'une clause ; une source indexée ne prouve pas sa présence actuelle sur le site. Les simulations n'ont aucune valeur juridique et ne modifient aucune réservation. Ce projet de recrutement indépendant n'est pas une application officielle de MénageSimple.
 
-## Pourquoi un moteur ciblé plutôt qu’une IA à l’exécution ?
+## Publication / récupération
 
-Un projet de recherche séparé a exploré Qwen3 8B. Dans les comptes rendus archivés du 8 novembre 2026, retained-v1 et coherent obtiennent chacun 19/24 décisions exactes et conservent 5/5 contrôles positifs connus. Des faux positifs subsistent. Les cas sont des données de développement ; certains négatifs ont été revus par un agent, pas par une annotation humaine indépendante authentifiée.
+Le déploiement en service actuel n'a pas été mis à jour par ce ZIP. Voir `docs/deployment-aws.md` pour l'ancien déploiement, ses limites financières et son retour arrière ; ne pas intervenir sur les services voisins. Préserver le commit de référence GitHub `02d01073622204b710fafc819f68d1c7707ed2af` tant que la nouvelle version n'a pas passé le contrôle visuel et la vérification HTTPS finale.
 
-Ces résultats n’ont pas été remesurés ici et ne sont pas un comparatif direct prouvant une meilleure précision de Guardian. Le choix du démonstrateur est une décision de portée : une application reproductible, des preuves explicites et une revue humaine, avec une simulation fiable. Guardian n’utilise pas Qwen, n’a pas été entraîné ou spécialisé et n’intègre pas V10. Voir [la synthèse d’ingénierie](docs/engineering.md).
+Code : https://github.com/marwanehmamouchi05/PolicyLens-MenageSimple-Guardian
 
-## Vérification humaine et limites
+Licence MIT. Les citations restent la propriété de leurs auteurs ; voir `THIRD_PARTY_NOTICES.md`.
 
-Confirmer le modèle réservé, les contrats signés, les dates d’effet, les exceptions, les tâches déléguées et les assurances avec l’entreprise. Une compatibilité numérique ne valide pas un article entier. Le rôle d’employeur reste contextuel. Pas d’avis juridique, d’infraction démontrée, de facturation incorrecte prouvée ou d’amélioration commerciale mesurée. Le registre local n’est pas inviolable et le service public ne stocke pas durablement ses revues.
+## Preuves et présentation
 
-Étapes possibles après validation métier : périmètres mieux structurés, formulations multilingues approuvées et actualisation manuelle contrôlée des sources. Aucun mécanisme de publication automatique n’est nécessaire pour démontrer le workflow.
+![Accueil](assets/screenshots/accueil.png)
 
-## Déploiement, vidéo et droits
+![Carte des règles et pages](assets/screenshots/graphe.png)
 
-- [Déploiement AWS et maîtrise des coûts](docs/deployment-aws.md)
-- [Présentation vidéo](docs/video.md), [script français](docs/narration-fr.txt) et [plan écran par écran](docs/recording-sequence-fr.txt)
-- [État de livraison et critères d’évaluation](docs/readiness.md)
-- Code sous [licence MIT](LICENSE). Citations, noms et marques : [mentions tierces](THIRD_PARTY_NOTICES.md).
+Les fonctions et leurs limites sont décrites ci-dessus. Voir la [validation reproductible](docs/validation.md).

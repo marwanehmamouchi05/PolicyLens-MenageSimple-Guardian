@@ -84,6 +84,10 @@ class Guardian:
         state=deepcopy(self.state);state.update(findings=findings(state['snapshot']),sources=SOURCES,limitations=LIMITATIONS,suggestion=SUGGESTION)
         from new_information import evaluate
         from business_fr import describe
+        from impact_integration import state as impact_state
+        state['impact']=impact_state(self)
+        from payment import finding as payment_finding
+        state['findings'].append(payment_finding(state['impact']['data'],fingerprint))
         state['findings'].extend(evaluate(d) for d in state['information'])
         for f in state['findings']:
             f['review']=next((r for r in reversed(state['reviews']) if r['fingerprint']==f['fingerprint']),None)

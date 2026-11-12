@@ -1,21 +1,53 @@
-WHAT DID YOU BUILD OR PRODUCE?
+English
 
-I built PolicyLens — MénageSimple Guardian, a runnable application deployed over public HTTPS on AWS, also available locally with a French interface, French error messages and French HTML/JSON audit reports. It presents four business-review categories: cancellation wording, employer responsibilities, contract cross-references, and cleaning products/equipment. Each combines dated source quotations and links, customer implications, possible legitimate explanations, a recommended action and recorded human review.
+I developed PolicyLens Guardian, a functional, French-language web application designed specifically for MénageSimple to detect, investigate, and help prevent inconsistencies in customer-facing information.
 
-The cancellation demonstration reads an edited local snapshot, recomputes the comparison, resolves a matching rule and flags a new mismatch. The 24-hour excerpt is explicitly historical: the direct page reading on 10 November gave 48 hours. The employer case uses the existing conservative comparison engine to distinguish a generic delegation description from MénageSimple’s customer-employer and administrative-mandate arrangement; it remains a clarification issue, without a legal conclusion. Reviewers can also compare newly entered structured cancellation deadlines or fee percentages against saved rules. Entered URLs are unverified metadata, not proof of live discovery. The application preserves the calculator, review decisions, local history and exports. No Qwen model, training, V10 research or production-site editing is part of Guardian.
+The prototype combines several features:
 
-QU’AVEZ-VOUS CONSTRUIT OU PRODUIT ?
+1. Automated consistency checks: It compares structured information from website pages, FAQs, service descriptions, and contractual documents to detect potential contradictions, incorrect references, and unclear conditions.
 
-J’ai construit PolicyLens — MénageSimple Guardian, une application utilisable sur AWS en HTTPS public et disponible localement, avec une interface, des erreurs et des rapports HTML/JSON en français. Elle présente quatre catégories à examiner : les conditions d’annulation, les responsabilités de l’employeur, les renvois contractuels et les produits / équipements de nettoyage. Chaque constat réunit des citations datées et leurs liens, les conséquences possibles pour le client, les explications légitimes, une action recommandée et des décisions humaines enregistrées.
+2. Policy Impact Graph: I also developed and tested a graph module connecting related policies, pages, customer commitments, and contractual clauses. It helps identify which indexed information may be affected when a policy changes, reducing the risk of incomplete corrections.
 
-La démonstration d’annulation lit une copie locale modifiée, recalcule la comparaison, résout une règle concordante et relève un nouvel écart. L’extrait à 24 heures est explicitement historique : la lecture directe du 10 novembre donnait 48 heures. Le cas de l’employeur utilise le moteur prudent existant pour distinguer une description générale de délégation du modèle client-employeur et du mandat administratif de MénageSimple ; il reste à clarifier, sans conclusion juridique. Le réviseur peut aussi comparer de nouveaux délais ou pourcentages structurés aux règles enregistrées. Les URL saisies sont des références non vérifiées, sans prétention de découverte en ligne. L’application conserve le calculateur, les décisions, l’historique local et les exports. Aucun modèle Qwen, entraînement, V10 ou changement du site réel ne fait partie de Guardian.
+3. Correction simulation and rechecking: Users can simulate changes, rerun consistency checks, and see which problems have been resolved and which references still require attention, without modifying the actual website.
 
+4. Evidence and human verification: Findings include original sources and explanations, distinguishing clear inconsistencies from cases requiring additional context or human judgment.
 
-Validation: 58 Python tests and 66 browser assertions passed on the deployed HTTPS application. Public reviews are private to each browser and temporary; local mode can preserve decisions. A 175-second French presentation with a disclosed synthetic Swiss French voice is published as an unlisted video.
+5. Business tools: The application includes an interactive dashboard, a cancellation-fee calculator, contractual-reference checks, a human-review workflow, and exportable audit reports.
 
-Validation : 58 tests Python et 66 assertions navigateur réussis sur l’application HTTPS déployée. Les revues publiques sont privées à chaque navigateur et temporaires ; le mode local peut conserver les décisions. Une présentation française de 175 secondes, avec voix de synthèse suisse déclarée, est publiée en vidéo non répertoriée.
+During my investigation, I also discovered that this problem is not unique to MénageSimple. For example, Richemont 3B's French Airbnb listing advertises three bedrooms in its title, while the listing details describe two bedrooms:
 
+https://www.airbnb.fr/rooms/1761780411178216809
 
-Application : https://policylens.54-173-165-46.sslip.io/
-GitHub : https://github.com/marwanehmamouchi05/PolicyLens-MenageSimple-Guardian
-Video / Vidéo : https://youtu.be/W54PfL6ECXQ
+This led me to explore a more ambitious, general-purpose AI investigation system using a local Qwen model, intended to discover inconsistencies automatically across different businesses and websites.
+
+However, making such a system reliable proved substantially more complex than the approximately four-hour scope of the recruitment challenge. Rather than submit an unfinished or unreliable AI system, I decided to pause that research and concentrate on delivering a functional, tested, MénageSimple-focused prototype.
+
+My goal was to demonstrate not only technical capabilities, but also engineering judgment: identifying a real business problem, choosing an achievable solution, building something that works, and keeping evidence and human verification at the center of the process.
+
+---
+
+Français
+
+J'ai développé PolicyLens Guardian, une application web fonctionnelle en français, spécialement conçue pour aider MénageSimple à détecter, examiner et prévenir les incohérences dans les informations destinées à ses clients.
+
+Le prototype combine plusieurs fonctionnalités :
+
+1. Vérification automatique de la cohérence : Il compare des informations structurées provenant des pages du site, des FAQ, des descriptions de services et des documents contractuels afin de détecter les contradictions potentielles, les références incorrectes et les conditions ambiguës.
+
+2. Graphe des politiques et analyse d'impact : J'ai également développé et testé un module reliant les politiques, les pages, les engagements clients et les clauses contractuelles. Il permet d'identifier les informations indexées susceptibles d'être affectées lorsqu'une politique change, afin de limiter les corrections incomplètes.
+
+3. Simulation et revérification des corrections : L'utilisateur peut simuler une modification, relancer les vérifications et observer quels problèmes sont résolus et quelles références nécessitent encore une intervention, sans modifier le véritable site web.
+
+4. Preuves et validation humaine : Les résultats sont accompagnés de leurs sources et d'explications, en distinguant les incohérences vérifiables des situations nécessitant davantage de contexte ou une validation humaine.
+
+5. Outils métier : L'application comprend un tableau de bord interactif, un calculateur de frais d'annulation, des vérifications des références contractuelles, un processus de validation humaine et des rapports d'audit exportables.
+
+Au cours de mon investigation, j'ai également constaté que ce problème ne concernait pas uniquement MénageSimple. Par exemple, l'annonce Airbnb en français de Richemont 3B indique trois chambres dans son titre, alors que les caractéristiques et la description du logement mentionnent deux chambres :
+
+https://www.airbnb.fr/rooms/1761780411178216809
+
+Cette découverte m'a amené à explorer une solution plus ambitieuse : un système d'investigation généraliste utilisant un modèle d'IA Qwen en local, capable, à terme, de rechercher automatiquement des incohérences sur différents sites et entreprises.
+
+Cependant, rendre ce système véritablement fiable s'est révélé bien plus complexe que le cadre d'environ quatre heures prévu pour ce défi. Plutôt que de présenter une solution d'IA inachevée ou insuffisamment fiable, j'ai choisi de mettre cette recherche en pause et de me concentrer sur un prototype fonctionnel, testé et spécifiquement adapté aux besoins de MénageSimple.
+
+Mon objectif était de démontrer non seulement des compétences techniques, mais aussi une capacité de jugement : identifier un véritable problème métier, choisir une solution réalisable, développer quelque chose qui fonctionne et placer les preuves ainsi que la validation humaine au centre du processus.

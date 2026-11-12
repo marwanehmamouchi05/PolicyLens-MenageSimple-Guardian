@@ -1,0 +1,130 @@
+[
+  {
+    "file": ".gitignore",
+    "state": "same"
+  },
+  {
+    "file": "app.js",
+    "state": "same"
+  },
+  {
+    "file": "business_fr.py",
+    "state": "same"
+  },
+  {
+    "file": "employer.py",
+    "state": "same"
+  },
+  {
+    "file": "engine.py",
+    "state": "same"
+  },
+  {
+    "file": "guardian.py",
+    "state": "changed"
+  },
+  {
+    "file": "impact.js",
+    "state": "new"
+  },
+  {
+    "file": "impact_evidence.json",
+    "state": "new"
+  },
+  {
+    "file": "impact_graph.py",
+    "state": "new"
+  },
+  {
+    "file": "impact_integration.py",
+    "state": "new"
+  },
+  {
+    "file": "index.html",
+    "state": "changed"
+  },
+  {
+    "file": "LICENSE",
+    "state": "same"
+  },
+  {
+    "file": "new_information.py",
+    "state": "same"
+  },
+  {
+    "file": "public_server.py",
+    "state": "changed"
+  },
+  {
+    "file": "README.md",
+    "state": "changed"
+  },
+  {
+    "file": "report_fr.py",
+    "state": "changed"
+  },
+  {
+    "file": "requirements.txt",
+    "state": "same"
+  },
+  {
+    "file": "server.py",
+    "state": "changed"
+  },
+  {
+    "file": "sources.json",
+    "state": "same"
+  },
+  {
+    "file": "style.css",
+    "state": "changed"
+  },
+  {
+    "file": "test_employer_fr.py",
+    "state": "same"
+  },
+  {
+    "file": "test_guardian.py",
+    "state": "same"
+  },
+  {
+    "file": "test_http.py",
+    "state": "same"
+  },
+  {
+    "file": "test_impact_graph.py",
+    "state": "new"
+  },
+  {
+    "file": "test_impact_integration.py",
+    "state": "new"
+  },
+  {
+    "file": "test_information.py",
+    "state": "same"
+  },
+  {
+    "file": "test_public.py",
+    "state": "same"
+  },
+  {
+    "file": "THIRD_PARTY_NOTICES.md",
+    "state": "same"
+  },
+  {
+    "file": "typed.py",
+    "state": "same"
+  },
+  {
+    "file": "docs\\demo-fr.md",
+    "state": "new"
+  },
+  {
+    "file": "docs\\deployment-aws.md",
+    "state": "changed"
+  },
+  {
+    "file": "docs\\verification-v2.md",
+    "state": "new"
+  }
+]

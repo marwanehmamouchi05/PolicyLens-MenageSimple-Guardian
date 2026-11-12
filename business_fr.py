@@ -4,14 +4,14 @@ DECISIONS={'Accept':'Accepter','Edit':'Modifier','Reject':'Rejeter','Request cla
 SEVERITY={'High':'Élevée','Medium':'Modérée','Review':'À examiner'}
 SOURCE_TITLES={'pricing':'Article tarifaire','terms':'Conditions générales','faq':'Questions fréquentes','home':'Accueil','english':'Guide en anglais'}
 LIMITS=[
- 'Extraits publics sélectionnés, revérifiés le 10 novembre 2026. Le cas d’annulation à 24 heures est historique, observé le 9 novembre ; la lecture directe du 10 novembre donne 48 heures. Le bouton de revérification ne consulte pas le site.',
+ 'Extraits publics sélectionnés, revérifiés le 12 novembre 2026. Le cas d’annulation à 24 heures est historique, observé le 9 novembre ; la lecture directe du 12 novembre donne 48 heures. Le bouton de revérification ne consulte pas le site.',
  'Les conditions affichent le 15 juillet 2026. Les dates d’effet des articles, contrats signés, exceptions et facturations réelles restent à confirmer.',
  'Les nouvelles informations sont saisies par un réviseur. Leur URL est une référence déclarée, pas une preuve de leur présence sur la page.',
  'Les simulations et décisions restent locales. Aucune publication, surveillance autonome, perte mesurée ou infraction juridique n’est établie.'
 ]
 COPY={
  'cancellation':dict(name='Annulation : 24 ou 48 heures ?',policy='Délai d’annulation',
- explanation='Cas historique : l’extrait du 9 novembre indiquait 24 heures, contre 48 heures dans les conditions et la FAQ. La lecture directe du 10 novembre donne désormais 48 heures. La simulation conserve l’ancien écart pour montrer le contrôle avant / après ; elle ne décrit pas un écart actuel confirmé.',
+ explanation='Cas historique : l’extrait du 9 novembre indiquait 24 heures, contre 48 heures dans les conditions et la FAQ. La lecture directe du 12 novembre donne désormais 48 heures. La simulation conserve l’ancien écart pour montrer le contrôle avant / après ; elle ne décrit pas un écart actuel confirmé.',
  impact='Un client qui annule entre 24 et 48 heures avant le ménage peut s’attendre à une gratuité alors qu’un autre texte prévoit des frais. À 36 heures, l’exemple de deux heures à CHF 43.90 illustre un écart de CHF 79.02.',
  alternatives='L’article peut concerner une ancienne règle, une exception ou un autre service. Les contrats signés prévalent selon les conditions générales. Leur application à une réservation réelle reste à confirmer.',
  action='Faire confirmer le délai, les frais et les exceptions par le responsable, puis harmoniser l’article, les conditions et la FAQ.'),

@@ -1,0 +1,351 @@
+{
+  "portee": "Échantillon d’affirmations indexées : les observations sans concordance exacte dans le registre Guardian sont à revérifier.",
+  "politiques": [
+    {
+      "politique": "Préavis d'annulation",
+      "reference_indexee": "48",
+      "hypothese_simulee": "72",
+      "references_indexees": [
+        {
+          "identifiant": "CAN-CGV",
+          "url_source": "https://menagesimple.com/conditions-generales/",
+          "valeur_de_travail": "48",
+          "valeur_initialement_indexee": "48",
+          "citation_originale": "Une réservation peut être annulée ou modifiée 48 heures à l’avance. Passé ce délai, le service sera facturé à 90%.",
+          "date_observation": "2026-11-12",
+          "service": "Toutes prestations : portée à confirmer",
+          "region": "",
+          "statut": "Écart potentiel",
+          "verification": "Citation retrouvée dans la capture datée",
+          "precision_sur_la_preuve": "Citation exacte retrouvée dans la capture directe du 12 novembre.",
+          "modification_simulee": false,
+          "action_recommandee": "Vérifier et harmoniser cette référence si la nouvelle règle est confirmée."
+        },
+        {
+          "identifiant": "CAN-FAQ",
+          "url_source": "https://menagesimple.com/questions-frequentes-menage/",
+          "valeur_de_travail": "48",
+          "valeur_initialement_indexee": "48",
+          "citation_originale": "Annulation gratuite jusqu’à 48H avant le ménage ;",
+          "date_observation": "2026-11-12",
+          "service": "Ménage régulier",
+          "region": "",
+          "statut": "Écart potentiel",
+          "verification": "Citation retrouvée dans la capture datée",
+          "precision_sur_la_preuve": "Citation exacte retrouvée dans la capture directe du 12 novembre.",
+          "modification_simulee": false,
+          "action_recommandee": "Vérifier et harmoniser cette référence si la nouvelle règle est confirmée."
+        },
+        {
+          "identifiant": "CAN-PRIX",
+          "url_source": "https://menagesimple.com/prix-menage-domicile-suisse/",
+          "valeur_de_travail": "48",
+          "valeur_initialement_indexee": "48",
+          "citation_originale": "Oui. En effet, vous pouvez modifier ou annuler votre réservation directement depuis votre compte en ligne, sans frais si c’est fait 48h à l’avance.",
+          "date_observation": "2026-11-12",
+          "service": "Ménage régulier",
+          "region": "",
+          "statut": "Écart potentiel",
+          "verification": "Citation retrouvée dans la capture datée",
+          "precision_sur_la_preuve": "Citation exacte retrouvée dans la capture directe du 12 novembre.",
+          "modification_simulee": false,
+          "action_recommandee": "Vérifier et harmoniser cette référence si la nouvelle règle est confirmée."
+        },
+        {
+          "identifiant": "CAN-PRIX-HIST",
+          "url_source": "https://menagesimple.com/prix-menage-domicile-suisse/",
+          "valeur_de_travail": "24",
+          "valeur_initialement_indexee": "24",
+          "citation_originale": "sans frais si c’est fait 24h à l’avance.",
+          "date_observation": "2026-11-09",
+          "service": "Ménage régulier",
+          "region": "",
+          "statut": "Source historique",
+          "verification": "Preuve historique",
+          "precision_sur_la_preuve": "",
+          "modification_simulee": false,
+          "action_recommandee": "Conserver la preuve historique."
+        },
+        {
+          "identifiant": "SYN-mwde17nz",
+          "url_source": "https://menagesimple.com/",
+          "valeur_de_travail": "48",
+          "valeur_initialement_indexee": "12",
+          "citation_originale": "Exemple fictif : délai de 12 heures.",
+          "date_observation": "2026-11-12",
+          "service": "Ménage régulier",
+          "region": "",
+          "statut": "À vérifier",
+          "verification": "Information fournie par le réviseur, non vérifiée",
+          "precision_sur_la_preuve": "",
+          "modification_simulee": true,
+          "action_recommandee": "Confirmer le contexte et la source avant publication."
+        }
+      ],
+      "renvois_contractuels": [
+        {
+          "clause_source": "7",
+          "clause_visee": "10d",
+          "candidats_attendus": [
+            "10c"
+          ],
+          "statut": "Renvoi incorrect",
+          "url_source": "https://menagesimple.com/conditions-generales/",
+          "citation": "Les annulations effectuées sous 48 heures sont soumises à des frais comme décrit au point 10d."
+        }
+      ]
+    },
+    {
+      "politique": "Identité de l'employeur",
+      "reference_indexee": "Client employeur",
+      "hypothese_simulee": null,
+      "references_indexees": [
+        {
+          "identifiant": "EMP-CGV",
+          "url_source": "https://menagesimple.com/conditions-generales/",
+          "valeur_de_travail": "Client employeur",
+          "valeur_initialement_indexee": "Client employeur",
+          "citation_originale": "Cocontractant employeur : toute personne physique ou morale ayant passé avec MénageSimple SA un contrat de placement privé, de mandat et de courtage.",
+          "date_observation": "2026-11-12",
+          "service": "Toutes prestations : portée à confirmer",
+          "region": "",
+          "statut": "À vérifier",
+          "verification": "Citation retrouvée dans la capture datée",
+          "precision_sur_la_preuve": "Citation exacte retrouvée dans la capture directe du 12 novembre.",
+          "modification_simulee": false,
+          "action_recommandee": "Confirmer le contexte et la source avant publication."
+        },
+        {
+          "identifiant": "EMP-FAQ",
+          "url_source": "https://menagesimple.com/questions-frequentes-menage/",
+          "valeur_de_travail": "Client employeur",
+          "valeur_initialement_indexee": "Client employeur",
+          "citation_originale": "Les clients de MénageSimple sont les employeurs.",
+          "date_observation": "2026-11-12",
+          "service": "Ménage régulier",
+          "region": "",
+          "statut": "À vérifier",
+          "verification": "Citation retrouvée dans la capture datée",
+          "precision_sur_la_preuve": "Citation exacte retrouvée dans la capture directe du 12 novembre.",
+          "modification_simulee": false,
+          "action_recommandee": "Confirmer le contexte et la source avant publication."
+        },
+        {
+          "identifiant": "EMP-LAUSANNE",
+          "url_source": "https://menagesimple.com/menage-regulier-lausanne/",
+          "valeur_de_travail": "Absence de responsabilité employeur annoncée",
+          "valeur_initialement_indexee": "Absence de responsabilité employeur annoncée",
+          "citation_originale": "Contrairement à un recrutement direct non déclaré, vous n’assumez aucune responsabilité employeur.",
+          "date_observation": "2026-11-12",
+          "service": "Ménage régulier",
+          "region": "Lausanne",
+          "statut": "À vérifier",
+          "verification": "Citation retrouvée dans la capture datée",
+          "precision_sur_la_preuve": "Citation exacte retrouvée dans la capture directe du 12 novembre.",
+          "modification_simulee": false,
+          "action_recommandee": "Confirmer le contexte et la source avant publication."
+        },
+        {
+          "identifiant": "EMP-GUIDE-EN",
+          "url_source": "https://menagesimple.com/en/home-cleaning-french-speaking-switzerland/",
+          "valeur_de_travail": "Gestion administrative déléguée",
+          "valeur_initialement_indexee": "Gestion administrative déléguée",
+          "citation_originale": "The second option is to use a placement agency or a cleaning company. The agency takes care of everything: staff selection, reference checks, social security declarations, professional liability insurance, and replacement in case of absence.",
+          "date_observation": "2026-11-12",
+          "service": "Modèle générique",
+          "region": "",
+          "statut": "À vérifier",
+          "verification": "Citation retrouvée dans la capture datée",
+          "precision_sur_la_preuve": "Citation exacte retrouvée dans la capture directe du 12 novembre.",
+          "modification_simulee": false,
+          "action_recommandee": "Confirmer le contexte et la source avant publication."
+        }
+      ],
+      "renvois_contractuels": []
+    },
+    {
+      "politique": "Aspirateur et matériel",
+      "reference_indexee": "Aspirateur fourni par le client",
+      "hypothese_simulee": null,
+      "references_indexees": [
+        {
+          "identifiant": "VAC-FAQ",
+          "url_source": "https://menagesimple.com/questions-frequentes-menage/",
+          "valeur_de_travail": "Aspirateur fourni par le client",
+          "valeur_initialement_indexee": "Aspirateur fourni par le client",
+          "citation_originale": "Les produits de nettoyage sont inclus. Pour un ménage standard, prévoyez votre aspirateur et votre balai-serpillière ; vérifiez les options de matériel à la réservation.",
+          "date_observation": "2026-11-12",
+          "service": "Ménage régulier",
+          "region": "",
+          "statut": "Valeur alignée",
+          "verification": "Citation retrouvée dans la capture datée",
+          "precision_sur_la_preuve": "Citation exacte retrouvée dans la capture directe du 12 novembre.",
+          "modification_simulee": false,
+          "action_recommandee": "Vérifier les exceptions avant de conclure."
+        },
+        {
+          "identifiant": "VAC-FULLY",
+          "url_source": "https://menagesimple.com/femme-de-menage-fully/",
+          "valeur_de_travail": "Prestataire annoncé équipé",
+          "valeur_initialement_indexee": "Prestataire annoncé équipé",
+          "citation_originale": "Nous venons entièrement équipés. Option éco disponible; rien à préparer de votre part.",
+          "date_observation": "2026-11-11",
+          "service": "Ménage régulier",
+          "region": "Fully",
+          "statut": "À vérifier",
+          "verification": "Extrait non retrouvé dans la dernière capture",
+          "precision_sur_la_preuve": "Citation antérieure non retrouvée le 12 novembre ; origine ancienne non authentifiée, aucune présence actuelle affirmée.",
+          "modification_simulee": false,
+          "action_recommandee": "Confirmer le contexte et la source avant publication."
+        },
+        {
+          "identifiant": "VAC-ROLLE",
+          "url_source": "https://menagesimple.com/femme-de-menage-rolle/",
+          "valeur_de_travail": "Prestataire annoncé équipé",
+          "valeur_initialement_indexee": "Prestataire annoncé équipé",
+          "citation_originale": "Nous venons entièrement équipés. Option éco disponible; rien à préparer de votre part.",
+          "date_observation": "2026-11-11",
+          "service": "Ménage régulier",
+          "region": "Rolle",
+          "statut": "À vérifier",
+          "verification": "Extrait non retrouvé dans la dernière capture",
+          "precision_sur_la_preuve": "Citation antérieure non retrouvée le 12 novembre ; origine ancienne non authentifiée, aucune présence actuelle affirmée.",
+          "modification_simulee": false,
+          "action_recommandee": "Confirmer le contexte et la source avant publication."
+        }
+      ],
+      "renvois_contractuels": []
+    },
+    {
+      "politique": "Produits de nettoyage",
+      "reference_indexee": "Produits inclus",
+      "hypothese_simulee": null,
+      "references_indexees": [
+        {
+          "identifiant": "PROD-FAQ",
+          "url_source": "https://menagesimple.com/questions-frequentes-menage/",
+          "valeur_de_travail": "Produits inclus",
+          "valeur_initialement_indexee": "Produits inclus",
+          "citation_originale": "Les produits de nettoyage sont inclus. Pour un ménage standard, prévoyez votre aspirateur et votre balai-serpillière ; vérifiez les options de matériel à la réservation.",
+          "date_observation": "2026-11-12",
+          "service": "Ménage régulier",
+          "region": "",
+          "statut": "Valeur alignée",
+          "verification": "Citation retrouvée dans la capture datée",
+          "precision_sur_la_preuve": "Citation exacte retrouvée dans la capture directe du 12 novembre.",
+          "modification_simulee": false,
+          "action_recommandee": "Vérifier les exceptions avant de conclure."
+        },
+        {
+          "identifiant": "PROD-EN",
+          "url_source": "https://menagesimple.com/en/home-cleaning-french-speaking-switzerland/",
+          "valeur_de_travail": "Produits fournis par le client",
+          "valeur_initialement_indexee": "Produits fournis par le client",
+          "citation_originale": "At MénageSimple, you provide the basic cleaning products, such as multi-surface cleaner, glass cleaner and bathroom cleaner, as well as the equipment, such as a vacuum cleaner and mop.",
+          "date_observation": "2026-11-12",
+          "service": "Ménage régulier",
+          "region": "",
+          "statut": "Écart potentiel",
+          "verification": "Citation retrouvée dans la capture datée",
+          "precision_sur_la_preuve": "Citation exacte retrouvée dans la capture directe du 12 novembre.",
+          "modification_simulee": false,
+          "action_recommandee": "Vérifier et harmoniser cette référence si la nouvelle règle est confirmée."
+        },
+        {
+          "identifiant": "PROD-FULLY",
+          "url_source": "https://menagesimple.com/femme-de-menage-fully/",
+          "valeur_de_travail": "Produits inclus",
+          "valeur_initialement_indexee": "Produits inclus",
+          "citation_originale": "Nous venons entièrement équipés. Option éco disponible; rien à préparer de votre part.",
+          "date_observation": "2026-11-11",
+          "service": "Ménage régulier",
+          "region": "Fully",
+          "statut": "À vérifier",
+          "verification": "Extrait non retrouvé dans la dernière capture",
+          "precision_sur_la_preuve": "Citation antérieure non retrouvée le 12 novembre ; origine ancienne non authentifiée, aucune présence actuelle affirmée.",
+          "modification_simulee": false,
+          "action_recommandee": "Confirmer le contexte et la source avant publication."
+        }
+      ],
+      "renvois_contractuels": []
+    },
+    {
+      "politique": "Moyens de paiement",
+      "reference_indexee": "Carte requise à la réservation",
+      "hypothese_simulee": null,
+      "references_indexees": [
+        {
+          "identifiant": "PAY-CGV",
+          "url_source": "https://menagesimple.com/conditions-generales/",
+          "valeur_de_travail": "Carte requise à la réservation",
+          "valeur_initialement_indexee": "Carte requise à la réservation",
+          "citation_originale": "Le cocontractant employeur est responsable d’indiquer au moment de la réservation une carte de crédit valable permettant de régler l’ensemble de la prestation demandée.",
+          "date_observation": "2026-11-12",
+          "service": "Ménage régulier",
+          "region": "",
+          "statut": "À vérifier",
+          "verification": "Citation retrouvée dans la capture datée",
+          "precision_sur_la_preuve": "Citation exacte retrouvée dans la capture directe du 12 novembre.",
+          "modification_simulee": false,
+          "action_recommandee": "Confirmer le contexte et la source avant publication."
+        },
+        {
+          "identifiant": "PAY-ROLLE",
+          "url_source": "https://menagesimple.com/femme-de-menage-rolle/",
+          "valeur_de_travail": "Carte, virement ou espèces annoncés",
+          "valeur_initialement_indexee": "Carte, virement ou espèces annoncés",
+          "citation_originale": "Carte, virement ou espèces. Facturation mensuelle claire et détaillée.",
+          "date_observation": "2026-11-11",
+          "service": "Ménage régulier",
+          "region": "Rolle",
+          "statut": "À vérifier",
+          "verification": "Extrait non retrouvé dans la dernière capture",
+          "precision_sur_la_preuve": "Citation antérieure non retrouvée le 12 novembre ; origine ancienne non authentifiée, aucune présence actuelle affirmée.",
+          "modification_simulee": false,
+          "action_recommandee": "Confirmer le contexte et la source avant publication."
+        },
+        {
+          "identifiant": "PAY-FULLY",
+          "url_source": "https://menagesimple.com/femme-de-menage-fully/",
+          "valeur_de_travail": "Carte, virement ou espèces annoncés",
+          "valeur_initialement_indexee": "Carte, virement ou espèces annoncés",
+          "citation_originale": "Carte, virement ou espèces. Facturation mensuelle claire et détaillée.",
+          "date_observation": "2026-11-11",
+          "service": "Ménage régulier",
+          "region": "Fully",
+          "statut": "À vérifier",
+          "verification": "Extrait non retrouvé dans la dernière capture",
+          "precision_sur_la_preuve": "Citation antérieure non retrouvée le 12 novembre ; origine ancienne non authentifiée, aucune présence actuelle affirmée.",
+          "modification_simulee": false,
+          "action_recommandee": "Confirmer le contexte et la source avant publication."
+        }
+      ],
+      "renvois_contractuels": []
+    }
+  ],
+  "historique": [
+    {
+      "date": "2026-11-12T10:11:16.371760+00:00",
+      "action": "Ajout fourni par le réviseur",
+      "identifiant": "SYN-mwde17nz",
+      "avant": null,
+      "apres": "12",
+      "comparaisons_resolues": [],
+      "comparaisons_creees": []
+    },
+    {
+      "date": "2026-11-12T10:11:16.737139+00:00",
+      "action": "Correction simulée",
+      "identifiant": "SYN-mwde17nz",
+      "avant": "12",
+      "apres": "48",
+      "comparaisons_resolues": [
+        "difference::CAN-CGV::SYN-mwde17nz",
+        "difference::CAN-FAQ::SYN-mwde17nz",
+        "difference::CAN-PRIX::SYN-mwde17nz"
+      ],
+      "comparaisons_creees": []
+    }
+  ],
+  "limite": "Analyse des seules références indexées. Une valeur alignée ou une simulation ne vérifie pas une page en ligne et ne confirme pas la règle d’une réservation réelle."
+}

@@ -31,10 +31,13 @@ class Handler(BaseHTTPRequestHandler):
         if path=='/favicon.ico':return self.send(b'',204,'image/x-icon')
         with LOCK:
             if path=='/api/state':return self.send(APP.view())
+            if path=='/impact/api/state':
+                from impact_integration import action
+                return self.send(action(APP,'state',{}))
             if path=='/api/export':return self.send(export_data(APP.view()),download='rapport-PolicyLens.json')
             if path=='/report':return self.send(report(APP.view()),mime='text/html; charset=utf-8')
             if path=='/api/health':return self.send(dict(ok=True,mode='local-curated-snapshot',version='1.0'))
-        static={'/':'index.html','/index.html':'index.html','/app.js':'app.js','/style.css':'style.css'}
+        static={'/':'index.html','/index.html':'index.html','/app.js':'app.js','/style.css':'style.css','/impact.js':'impact.js','/navigation.js':'navigation.js','/graph-explorer.js':'graph-explorer.js'}
         if path in static:
             name=static[path];mime='text/html' if name.endswith('html') else 'text/javascript' if name.endswith('js') else 'text/css'
             return self.send((ROOT/name).read_bytes(),mime=mime+'; charset=utf-8')
@@ -42,7 +45,8 @@ class Handler(BaseHTTPRequestHandler):
     def do_POST(self):
         if not self.allowed():return self.send({'error':'Accès autorisé uniquement depuis cette application locale.'},403)
         try:
-            n=int(self.headers.get('Content-Length','0'))
+            try:n=int(self.headers.get('Content-Length','0'))
+            except ValueError:raise ValueError('La taille de la demande est invalide.') from None
             if not 0<n<=20000:raise ValueError('La demande doit contenir de 1 à 20 000 octets.')
             data=json.loads(self.rfile.read(n))
             if not isinstance(data,dict):raise ValueError('Les données doivent être présentées sous forme d’objet JSON.')
@@ -53,9 +57,12 @@ class Handler(BaseHTTPRequestHandler):
                 elif path=='/api/review':value=APP.review(data)
                 elif path=='/api/scenario':value=scenario(data)
                 elif path=='/api/recheck':value=APP.view()
+                elif path.startswith('/impact/api/') and path.rsplit('/',1)[-1] in ('impact','add','simulate','reset','report'):
+                    from impact_integration import action
+                    value=action(APP,path.rsplit('/',1)[-1],data)
                 else:return self.send({'error':'Page ou ressource introuvable.'},404)
             return self.send(value)
-        except json.JSONDecodeError:return self.send({'error':'Les données JSON sont illisibles. Vérifiez le formulaire.'},400)
+        except (json.JSONDecodeError,UnicodeDecodeError,RecursionError):return self.send({'error':'Les données JSON sont illisibles. Vérifiez le formulaire.'},400)
         except KeyError:return self.send({'error':'Le formulaire est incomplet. Renseignez tous les champs nécessaires.'},400)
         except TypeError:return self.send({'error':'Le format des données est incorrect. Vérifiez les champs du formulaire.'},400)
         except ValueError as e:return self.send({'error':str(e)},400)

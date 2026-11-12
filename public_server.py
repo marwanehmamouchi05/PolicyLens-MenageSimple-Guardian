@@ -18,6 +18,7 @@ _rates=OrderedDict()
 
 class SessionProxy:
     def __getattr__(self,name):return getattr(_local.app,name)
+    def __setattr__(self,name,value):setattr(_local.app,name,value)
     def view(self):
         state=_local.app.view();state['public_demo']=True;return state
 

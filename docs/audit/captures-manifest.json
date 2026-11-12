@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://menagesimple.com/conditions-generales/",
+    "slug": "conditions-generales",
+    "http_status": 200,
+    "final_url": "https://menagesimple.com/conditions-generales/",
+    "sha256": "0cb93f0fde89c2dc25bcd13aed9f2ec5b05b69566aff4b3b097a9a1b7b8ca757"
+  },
+  {
+    "url": "https://menagesimple.com/questions-frequentes-menage/",
+    "slug": "questions-frequentes-menage",
+    "http_status": 200,
+    "final_url": "https://menagesimple.com/questions-frequentes-menage/",
+    "sha256": "7727ecdf7e7ae163a03f86a6396632a3c4f005b25fe9a19b8fe4d0388ed92d9c"
+  },
+  {
+    "url": "https://menagesimple.com/prix-menage-domicile-suisse/",
+    "slug": "prix-menage-domicile-suisse",
+    "http_status": 200,
+    "final_url": "https://menagesimple.com/prix-menage-domicile-suisse/",
+    "sha256": "ac0efc70c8f33b1d6930f776769c1958f561be406cf7892802cc484cc1dccd3a"
+  },
+  {
+    "url": "https://menagesimple.com/menage-regulier-lausanne/",
+    "slug": "menage-regulier-lausanne",
+    "http_status": 200,
+    "final_url": "https://menagesimple.com/menage-regulier-lausanne/",
+    "sha256": "a30a8bbb0abd7da73494eb12cc5446c4ff75247460f9e62a3a3b8d239efb34b9"
+  },
+  {
+    "url": "https://menagesimple.com/en/home-cleaning-french-speaking-switzerland/",
+    "slug": "home-cleaning-french-speaking-switzerland",
+    "http_status": 200,
+    "final_url": "https://menagesimple.com/en/home-cleaning-french-speaking-switzerland/",
+    "sha256": "2fa5fadf97b84f66ef3667ab0c64332bc3515a53084fd4d7570c75e960a487fb"
+  },
+  {
+    "url": "https://menagesimple.com/femme-de-menage-fully/",
+    "slug": "femme-de-menage-fully",
+    "http_status": 200,
+    "final_url": "https://menagesimple.com/femme-de-menage-fully/",
+    "sha256": "d392ec42d6783fc053b8827bcf6e68351fa8c938e299b6e6a25bfac822d6c71a"
+  },
+  {
+    "url": "https://menagesimple.com/femme-de-menage-rolle/",
+    "slug": "femme-de-menage-rolle",
+    "http_status": 200,
+    "final_url": "https://menagesimple.com/femme-de-menage-rolle/",
+    "sha256": "2874d429701cd2caed8ec1f1c89ebbe07a305a351618ff85c4b9c190b7c9004e"
+  },
+  {
+    "url": "https://menagesimple.com/",
+    "slug": "home",
+    "http_status": 200,
+    "final_url": "https://menagesimple.com/",
+    "sha256": "bde3451cd1ab21c0e18dc6653d3112d790d9ac8a5453ecfbbd795cbaa10fce04"
+  }
+]

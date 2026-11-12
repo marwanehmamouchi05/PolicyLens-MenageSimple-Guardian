@@ -1,30 +1,27 @@
-# Synthèse d’ingénierie
+# Ingénierie et portée
 
-Guardian réutilise un moteur déterministe existant, sans changer ses règles pour embellir les résultats. La version métier vérifiée est conservée séparément au checkpoint 13631a7. Ce dépôt neuf ne contient pas l’historique expérimental V9/V10, les modèles, données d’entraînement ni environnements privés.
+Une application Python standard et une interface HTML/CSS/JavaScript sans dépendances applicatives. Les règles sont déterministes et inspectables ; aucun modèle, entraînement, API payante ou robot de collecte ne tourne à l’exécution.
 
-La copie de publication ajoute seulement public_server.py : frontières HTTP, isolation et expiration des sessions, réinitialisation du seul navigateur courant, limites d’entrées / actions / connexions et cookies réservés à HTTPS. Le serveur local d’origine reste disponible. Les résultats Python incluent des tests qui démontrent qu’un navigateur ne voit pas les modifications d’un autre.
+Le moteur conserve les seuils numériques et le calcul Decimal. Le module d’impact ajoute un registre de valeurs, des liens calculés et un adaptateur explicite à l’état Guardian : les copies historiques et les nouvelles saisies prises en charge sont reflétées dans le graphe. Les citations originales sont préservées pendant les simulations ; la valeur de travail reste distincte de la valeur initiale.
 
-## Recherche séparée : mesure et choix de portée
+Les cas métier de départ sont rédigés et sélectionnés manuellement. Le recalcul concerne les champs structurés reconnus, les relations et les états de simulation. L’outil ne déduit pas une nouvelle règle d’un texte libre. Les observations sans capture vérifiée restent qualifiées, y compris dans les exports.
 
-Les comptes rendus archivés du 8 novembre pour Qwen3 8B indiquent :
+## Frontières de la démonstration publique
 
-| Expérience historique | Décisions exactes | Contrôles positifs connus |
-|---|---:|---:|
-| retained-v1 | 19/24 | 5/5 |
-| coherent | 19/24 | 5/5 |
+Cookies HttpOnly, Secure et SameSite=Strict derrière HTTPS ; état privé par navigateur, expiration après 30 minutes d’inactivité. Limites de sessions, demandes, connexions, tailles et actions. Origine et hôte contrôlés. Citations non fiables échappées ou rendues comme texte. Réinitialisation limitée au visiteur courant. L’état public reste en mémoire et disparaît au redémarrage ; les décisions ne sont pas un journal permanent certifié.
 
-Le second candidat réduisait certains faux conflits, sans améliorer ce total de décisions exactes ; des faux positifs subsistaient. Les mesures sont des résultats de développement archivés, pas une précision indépendante de Guardian. Certains cas négatifs étaient revus par un agent ; ils ne doivent pas être décrits comme une annotation humaine indépendante authentifiée. Aucune nouvelle exécution ou formation de Qwen n’a eu lieu pour cette livraison. Aucun comparatif apparié n’a établi une supériorité de Guardian.
+## Fichiers principaux
 
-L’intérêt pour la candidature est le jugement : privilégier une application complète, inspectable et reproductible, dont les incertitudes sont explicites. L’IA a assisté l’implémentation et les matériaux de présentation ; les règles, preuves datées et décisions de revue restent visibles. Les décisions fictives de démonstration ne constituent pas une validation par MénageSimple.
+- engine.py / typed.py : validation, comparaison et calculs.
+- guardian.py / new_information.py : scénarios, saisies et décisions.
+- employer.py / payment.py : qualifications métier et preuves contextualisées.
+- impact_graph.py / impact_integration.py : registre, liens, impact, adaptateur et historique de session.
+- business_fr.py / report_fr.py / impact_report_fr.py : présentation et exports français.
+- server.py / public_server.py : mode local et démonstration publique isolée.
+- app.js / navigation.js / impact.js / graph-explorer.js : interface et carte, une seule application.
 
-## Répartition du code
+## Usage de l’IA
 
-- engine.py / typed.py : validation et comparaison conservatrices, quantités et calcul décimal.
-- guardian.py : état, workflow et historique local.
-- employer.py : distinction de rôles, comparaison de modèles génériques et spécifiques.
-- new_information.py : deux types de saisies structurées, sans extraction de texte libre.
-- report_fr.py / business_fr.py : rapports, libellés et qualifications françaises.
-- server.py : usage local ; public_server.py : adaptateur de démonstration publique isolée.
-- index.html / app.js / style.css : interface légère sans framework ni service tiers à l’exécution.
+L’IA a assisté la programmation, les vérifications et la préparation de présentation. Les tests et captures constituent les preuves vérifiables. Les décisions de démonstration ne sont pas des validations authentifiées par MénageSimple. La recherche locale Qwen est séparée et mise en pause ; elle n’est pas une fonction de Guardian et aucune précision générale issue de cette recherche n’est revendiquée.
 
-Les points restant à confirmer sont métier : modèle réservé, contrats, dates d’effet, assurances et exceptions. Le prototype n’est ni un système juridique, ni un moniteur général du site, ni un registre d’audit inviolable.
+Le prototype n’est ni un avis juridique, ni une surveillance exhaustive, ni un système connecté aux données clients. Les contrats, prestations et exceptions doivent être vérifiés par un responsable.

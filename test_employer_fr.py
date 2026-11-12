@@ -7,13 +7,13 @@ class EmployerTests(unittest.TestCase):
     def setUp(self):self.app=Guardian()
     def employer(self):return next(f for f in self.app.view()['findings'] if f['id']=='employer')
     def test_four_categories_and_context_status(self):
-        self.assertEqual({f['id'] for f in self.app.view()['findings']},{'cancellation','employer','reference','equipment'})
+        self.assertEqual({f['id'] for f in self.app.view()['findings']},{'cancellation','employer','reference','equipment','payment'})
         f=self.employer();self.assertEqual(f['status'],'Clarity concern');self.assertIn('clarification nécessaire',f['explanation'])
     def test_correct_sources_language_dates_scope(self):
         f=self.employer()
         self.assertEqual({EXCERPTS[q]['source'] for q in f['evidence']},{'english','faq','terms'})
         for q in f['evidence']:
-            self.assertEqual(EXCERPTS[q]['observed'],'2026-11-10');self.assertFalse(EXCERPTS[q]['historical']);self.assertTrue(EXCERPTS[q]['url'].startswith('https://menagesimple.com/'))
+            self.assertEqual(EXCERPTS[q]['observed'],'2026-11-12');self.assertFalse(EXCERPTS[q]['historical']);self.assertTrue(EXCERPTS[q]['url'].startswith('https://menagesimple.com/'))
         for source in SOURCES['sources']:self.assertIn(source['language'],('fr','en'));self.assertTrue(source['scope'])
     def test_generic_scope_not_verified_legal_conflict(self):
         f=self.employer();self.assertTrue(f['check']['flags'])
@@ -34,11 +34,11 @@ class EmployerTests(unittest.TestCase):
             f=next(f for f in Guardian(p).view()['findings'] if f['id']=='employer')
             self.assertEqual(f['review']['note'],'Quel modèle ?');self.assertEqual(f['status'],'Clarity concern')
     def test_french_report_and_original_quote(self):
-        text=report(self.app.view());self.assertIn('Qui est réellement l’employeur ?',text);self.assertIn('With a company, everything is delegated.',text);self.assertIn('Une gestion déléguée',text);self.assertIn('2026-11-10',text)
+        text=report(self.app.view());self.assertIn('Qui est réellement l’employeur ?',text);self.assertIn('With a company, everything is delegated.',text);self.assertIn('Une gestion déléguée',text);self.assertIn('2026-11-12',text)
     def test_french_json_does_not_export_internal_english_labels(self):
         data=export_data(self.app.view());raw=json.dumps(data,ensure_ascii=False)
         for token in ('Wording inconsistency','Clarity concern','customer_is_legal_employer','Potential mismatch','After owner confirmation'):self.assertNotIn(token,raw)
-        self.assertEqual(len(data['problemes']),4)
+        self.assertEqual(len(data['problemes']),5)
     def test_historical_cancellation_is_not_current_conflict(self):
         self.assertTrue(EXCERPTS['pricing-notice']['historical']);self.assertIn('48h',EXCERPTS['pricing-current']['quote'])
         self.assertEqual(EXCERPTS['pricing-notice']['observed'],'2026-11-09');self.assertIn('historique',self.app.view()['findings'][0]['display']['status'])

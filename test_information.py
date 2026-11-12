@@ -39,6 +39,6 @@ class InformationTests(unittest.TestCase):
     def test_old_state_migrates_without_data_loss(self):
         with tempfile.TemporaryDirectory() as t:
             p=Path(t)/'state.json';old=self.app.state.copy();old.pop('information');old.pop('information_history');p.write_text(json.dumps(old),encoding='utf-8')
-            a=Guardian(p);self.assertEqual(len(a.view()['findings']),4);self.assertEqual(a.view()['history'],old['history'])
+            a=Guardian(p);self.assertEqual(len(a.view()['findings']),5);self.assertEqual(a.view()['history'],old['history'])
 
 if __name__=='__main__':unittest.main(verbosity=2)
